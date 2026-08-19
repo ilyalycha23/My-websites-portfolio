@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Райхон — узбекская чайхана на Комендантском</title>
+  <meta name="description" content="Кафе Райхон в Приморском районе Санкт-Петербурга: настоящий плов, манты, лагман, самса из тандыра и шашлык. Халяль. Рейтинг 5.0 на Яндекс Картах. Комендантский проспект, 66к1.">
+  <meta property="og:title" content="Райхон — узбекская кухня на Комендантском">
+  <meta property="og:description" content="Плов, как в Ташкенте. Большие порции, халяль, тандыр и чай. Приходите голодными.">
+  <meta property="og:image" content="images/hero-1.jpg">
+  <meta property="og:type" content="restaurant">
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <img src="images/logo.jpg" alt="Райхон">
+      <p>Райхон</p>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a class="logo" href="#top">
+        <img src="images/logo.jpg" alt="Логотип Райхон">
+        <span>Райхон</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#about">О нас</a>
+        <a href="#signatures">Хиты</a>
+        <a href="#menu">Меню</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#visit">Контакты</a>
+      </nav>
+      <div class="header-cta">
+        <a class="phone-link" href="tel:+79810150303">+7 (981) 015-03-03</a>
+        <a class="btn btn-gold" href="#visit" data-modal="book">Забронировать</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Меню"><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobile-menu">
+    <nav>
+      <a href="#about">О нас</a>
+      <a href="#signatures">Хиты</a>
+      <a href="#menu">Меню</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#visit">Контакты</a>
+    </nav>
+    <a class="btn btn-gold" href="tel:+79810150303">+7 (981) 015-03-03</a>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-media">
+        <div class="hero-slide active"><img src="images/hero-1.jpg" alt="Шашлык и люля-кебаб в Райхон"></div>
+        <div class="hero-slide"><img src="images/hero-4.jpg" alt="Интерьер чайханы Райхон"></div>
+        <div class="hero-slide"><img src="images/dishes/plov-tashkent.jpg" alt="Ташкентский плов"></div>
+        <div class="hero-slide"><img src="images/hero-2.jpg" alt="Лагман в риштанской пиале"></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="eyebrow">Чайхана · Халяль · Комендантский</div>
+        <h1>Райхон<em>.</em></h1>
+        <p class="hero-lead">Узбекская кухня без пафоса и без компромиссов. Плов из казана, лепёшка из тандыра, чайник зелёного чая — и ощущение, что вас ждали.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#menu">Смотреть меню</a>
+          <a class="btn btn-ghost" href="https://wa.me/79810150303" target="_blank" rel="noopener">Написать в WhatsApp</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>5.0</strong>321 отзыв на Яндекс Картах</div>
+          <div><strong>10:00–01:00</strong>каждый день</div>
+          <div><strong>450–700 ₽</strong>средний счёт</div>
+        </div>
+      </div>
+      <div class="hero-dots">
+        <button class="active" aria-label="1"></button>
+        <button aria-label="2"></button>
+        <button aria-label="3"></button>
+        <button aria-label="4"></button>
+      </div>
+    </section>
+
+    <div class="facts">
+      <div class="facts-inner">
+        <div><b>5.0</b><span>Яндекс Карты</span></div>
+        <div><b>Халяль</b><span>без свинины</span></div>
+        <div><b>2026</b><span>Хорошее место</span></div>
+        <div><b>10–01</b><span>каждый день</span></div>
+      </div>
+    </div>
+
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <div class="eyebrow">О месте</div>
+          <h2>Кусочек Ташкента<br>на севере Петербурга</h2>
+          <div class="ornament"></div>
+          <p>Райхон — чайхана в Приморском районе, куда заходят «на минутку» и остаются на весь вечер. Гости пишут, что вкус чувствуется как дома: большие порции, горячая лепёшка, острый перчик «прямо в сердце».</p>
+          <p>Готовим по классическим рецептам: плов на выбор — чайханский или ташкентский с нутом и изюмом, манты и хонум на пару, лагман с лапшой ручной работы, самса и нон из собственного тандыра. Свинины нет. Кухня халяль.</p>
+          <div class="meaning">
+            <small>Райхон</small>
+            <b>значит «базилик»</b>
+            <span>В Узбекистане это не просто зелень — знак дома, гостеприимства и того, что стол накрыт для своих.</span>
+          </div>
+        </div>
+        <div class="about-photos reveal">
+          <img src="images/hero-4.jpg" alt="Зал Райхон с сузани и икатом">
+          <img src="images/gallery/g1.jpg" alt="Плов, долма и лепёшка">
+          <img src="images/dishes/lepeshka.jpg" alt="Лепёшка из тандыра">
+        </div>
+      </div>
+      <div class="container features">
+        <div class="feature reveal"><span>Халяль</span><p>Без свинины. Мясо и бульоны — по правилам.</p></div>
+        <div class="feature reveal"><span>Свой тандыр</span><p>Лепёшки и самса пекутся здесь, а не «подогреваются».</p></div>
+        <div class="feature reveal"><span>Большие порции</span><p>Сытно на двоих, если не жадничать с пловом.</p></div>
+        <div class="feature reveal"><span>До 01:00</span><p>Обед, ужин и поздний чай после работы.</p></div>
+      </div>
+    </section>
+
+    <section class="section signatures" id="signatures">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">То, за чем возвращаются</div>
+          <h2>Блюда, из‑за которых стоит ехать</h2>
+          <p>Не универсальное меню «на любой вкус». Сначала берите классику: плов, манты, шурпу, самсу. Остальное — потом.</p>
+        </div>
+        <div class="sig-grid">
+          <article class="sig-card reveal">
+            <img src="images/dishes/plov-tashkent.jpg" alt="Плов ташкентский">
+            <span class="price">430 ₽</span>
+            <figcaption>
+              <h3>Плов ташкентский</h3>
+              <p>Узбекский рис, говядина, две моркови, нут, изюм и зира. Можно с казы.</p>
+            </figcaption>
+          </article>
+          <article class="sig-card reveal">
+            <img src="images/dishes/manti.jpg" alt="Манты из говядины">
+            <span class="price">429 ₽</span>
+            <figcaption>
+              <h3>Манты</h3>
+              <p>Сочные, на пару, со сметаной. Гости ставят 10 из 10.</p>
+            </figcaption>
+          </article>
+          <article class="sig-card reveal">
+            <img src="images/dishes/lagman.jpg" alt="Лагман">
+            <span class="price">449 ₽</span>
+            <figcaption>
+              <h3>Лагман</h3>
+              <p>Лапша ручной работы, говядина и овощи в наваристом бульоне.</p>
+            </figcaption>
+          </article>
+          <article class="sig-card reveal">
+            <img src="images/dishes/kazan-kebab.jpg" alt="Казан-кабоб из баранины">
+            <span class="price">699 ₽</span>
+            <figcaption>
+              <h3>Казан-кабоб</h3>
+              <p>Ягнёнок с картошкой из казана. Корона мясного стола.</p>
+            </figcaption>
+          </article>
+          <article class="sig-card reveal">
+            <img src="images/dishes/samsa-beef.jpg" alt="Самса с говядиной">
+            <span class="price">120 ₽</span>
+            <figcaption>
+              <h3>Самса из тандыра</h3>
+              <p>Слоёное тесто, рубленная говядина, зира. «Мяса столько, сколько надо».</p>
+            </figcaption>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section combo" id="combo">
+      <div class="container combo-box">
+        <div class="reveal">
+          <div class="eyebrow">Комбо каждый день</div>
+          <h2>Настоящий плов и всё, что к нему нужно</h2>
+          <p>Не просто тарелка риса — полноценный обед или ужин: плов на выбор, закуска, половина большой лепёшки и чай или компот.</p>
+          <ul class="combo-list">
+            <li>Плов чайханский или ташкентский</li>
+            <li>Закуска или соленье</li>
+            <li>Половина свежей узбекской лепёшки</li>
+            <li>Компот или чай — чёрный либо зелёный</li>
+          </ul>
+          <a class="btn btn-gold" href="tel:+79810150303">Заказать стол</a>
+        </div>
+        <div class="combo-price reveal">
+          <span>каждый день с 10:00 до 01:00</span>
+          <b>599 ₽</b>
+          <span>в зале и на вынос</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Меню</div>
+          <h2>Что готовим</h2>
+          <p>Цены — из официального меню заведения. Наличие отдельных позиций лучше уточнить по телефону: кухня живая, и это нормально.</p>
+        </div>
+        <div class="menu-tabs" role="tablist">
+          <button type="button" data-cat="all">Всё</button>
+          <button type="button" class="active" data-cat="hot">Горячее</button>
+          <button type="button" data-cat="soups">Супы</button>
+          <button type="button" data-cat="grill">Шашлык</button>
+          <button type="button" data-cat="bake">Выпечка</button>
+          <button type="button" data-cat="salads">Салаты</button>
+          <button type="button" data-cat="sides">Закуски</button>
+          <button type="button" data-cat="sweet">Десерты</button>
+          <button type="button" data-cat="drinks">Напитки</button>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-item" data-cat="hot">
+            <img src="images/dishes/plov-tashkent.jpg" alt="">
+            <div>
+              <h3>Плов ташкентский</h3>
+              <p>Рис, говядина, нут, изюм, две моркови и зира. Можно с казы.</p>
+              <div class="meta">350 г</div>
+            </div>
+            <div class="cost">430 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="hot">
+            <img src="images/dishes/plov-chaikhana.jpg" alt="">
+            <div>
+              <h3>Плов чайханский</h3>
+              <p>Классика без нута и изюма — чистый вкус зиры и мяса.</p>
+              <div class="meta">350 г</div>
+            </div>
+            <div class="cost">430 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="hot">
+            <img src="images/dishes/manti.jpg" alt="">
+            <div>
+              <h3>Манты из говядины</h3>
+              <p>На пару, тонкое тесто, сочная начинка. Подаются со сметаной.</p>
+              <div class="meta">350 г</div>
+            </div>
+            <div class="cost">429 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="hot">
+            <img src="images/dishes/honum.jpg" alt="">
+            <div>
+              <h3>Хонум из говядины</h3>
+              <p>Рулет на пару — для тех, кто любит манты, но хочет иначе.</p>
+              <div class="meta">350 г</div>
+            </div>
+            <div class="cost">429 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="hot">
+            <img src="images/dishes/lagman-kavurma.jpg" alt="">
+            <div>
+              <h3>Кавурма лагман</h3>
+              <p>Жареный лагман с лапшой ручной работы и яйцом сверху.</p>
+              <div class="meta">350 г</div>
+            </div>
+            <div class="cost">529 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="hot">
+            <img src="images/dishes/chuchvara.jpg" alt="">
+            <div>
+              <h3>Чучвара</h3>
+              <p>Узбекские пельмени ручной лепки в бульоне или жареные.</p>
+              <div class="meta">250 г</div>
+            </div>
+            <div class="cost">399 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="hot">
+            <img src="images/dishes/kurtub.jpg" alt="">
+            <div>
+              <h3>Куртоб</h3>
+              <p>Горячая слоёная лепёшка фатир и холодная сузьма с овощами.</p>
+              <div class="meta">500 г</div>
+            </div>
+            <div class="cost">469 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="hot">
+            <img src="images/dishes/kazan-kebab.jpg" alt="">
+            <div>
+              <h3>Казан-кабоб из баранины</h3>
+              <p>Мясо ягнёнка с картошкой, свежими овощами и укропом.</p>
+              <div class="meta">400 г</div>
+            </div>
+            <div class="cost">699 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="hot">
+            <img src="images/dishes/kazan-beef.jpg" alt="">
+            <div>
+              <h3>Казан-кабоб из говядины</h3>
+              <p>Та же логика казана, но с говядиной.</p>
+              <div class="meta">400 г</div>
+            </div>
+            <div class="cost">669 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="hot">
+            <img src="images/dishes/tandyr-lamb.jpg" alt="">
+            <div>
+              <h3>Тандыр гушт из баранины</h3>
+              <p>Маринад из восточных специй и огонь тандыра.</p>
+              <div class="meta">400 г</div>
+            </div>
+            <div class="cost">699 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="hot">
+            <img src="images/dishes/tandyr-beef.jpg" alt="">
+            <div>
+              <h3>Тандыр гушт из говядины</h3>
+              <p>С огурцами, помидорами, луком и томатным соусом.</p>
+              <div class="meta">400 г</div>
+            </div>
+            <div class="cost">669 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="hot">
+            <img src="images/dishes/kavurma-fergana.jpg" alt="">
+            <div>
+              <h3>Кавурма по-фергански</h3>
+              <p>Тушёная говядина с паприкой и кунжутом.</p>
+              <div class="meta">350 г</div>
+            </div>
+            <div class="cost">649 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="soups">
+            <img src="images/dishes/shurpa-lamb.jpg" alt="">
+            <div>
+              <h3>Шурпа из баранины</h3>
+              <p>Наваристый бульон, мясо на кости, овощи и укроп.</p>
+              <div class="meta">300 г</div>
+            </div>
+            <div class="cost">389 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="soups">
+            <img src="images/dishes/shurpa-beef.jpg" alt="">
+            <div>
+              <h3>Шурпа из говядины</h3>
+              <p>Прозрачный, сытный, как домашний.</p>
+              <div class="meta">300 г</div>
+            </div>
+            <div class="cost">379 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="soups">
+            <img src="images/dishes/lagman.jpg" alt="">
+            <div>
+              <h3>Лагман из говядины</h3>
+              <p>Суп с лапшой ручной работы — главный согревающий.</p>
+              <div class="meta">350 г</div>
+            </div>
+            <div class="cost">449 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="soups">
+            <img src="images/dishes/moshkhurda.jpg" alt="">
+            <div>
+              <h3>Мошхурда</h3>
+              <p>Густой суп с рисом и горохом маш из Узбекистана.</p>
+              <div class="meta">300 г</div>
+            </div>
+            <div class="cost">379 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="soups">
+            <img src="images/dishes/kuza.jpg" alt="">
+            <div>
+              <h3>Куза шурпа</h3>
+              <p>В глиняном горшочке. Говядина 489 ₽ · баранина 589 ₽</p>
+              <div class="meta">350 г</div>
+            </div>
+            <div class="cost">489 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="soups">
+            <img src="images/dishes/chuchvara-shurpa.jpg" alt="">
+            <div>
+              <h3>Чучвара шурпа</h3>
+              <p>Домашние пельмени в насыщенном бульоне, со сметаной.</p>
+              <div class="meta">300 г</div>
+            </div>
+            <div class="cost">369 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="grill">
+            <img src="images/dishes/shashlik-ribs.jpg" alt="">
+            <div>
+              <h3>Корейка ягнёнка</h3>
+              <p>Каре на углях — нежное, без тяжёлого запаха баранины.</p>
+              <div class="meta">250 г</div>
+            </div>
+            <div class="cost">649 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="grill">
+            <img src="images/dishes/shashlik-lamb.jpg" alt="">
+            <div>
+              <h3>Шашлык из баранины</h3>
+              <p>Маринад: лук, зира, кориандр, перец, минеральная вода.</p>
+              <div class="meta">200 г</div>
+            </div>
+            <div class="cost">499 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="grill">
+            <img src="images/dishes/shashlik-beef.jpg" alt="">
+            <div>
+              <h3>Шашлык из говядины</h3>
+              <p>На углях, с тем же восточным маринадом.</p>
+              <div class="meta">200 г</div>
+            </div>
+            <div class="cost">449 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="grill">
+            <img src="images/dishes/lyulya.jpg" alt="">
+            <div>
+              <h3>Люля-кебаб</h3>
+              <p>Говяжий фарш, жир, зира и кориандр на шампуре.</p>
+              <div class="meta">200 г</div>
+            </div>
+            <div class="cost">349 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="bake">
+            <img src="images/dishes/lepeshka.jpg" alt="">
+            <div>
+              <h3>Лепёшка из тандыра</h3>
+              <p>Горячая, с кунжутом. Без неё стол не считается накрытым.</p>
+              <div class="meta">280 г</div>
+            </div>
+            <div class="cost">75 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="bake">
+            <img src="images/dishes/samsa-beef.jpg" alt="">
+            <div>
+              <h3>Самса с говядиной</h3>
+              <p>Слоёное тесто, рубленное мясо, лук и зира.</p>
+              <div class="meta">1 шт.</div>
+            </div>
+            <div class="cost">120 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="bake">
+            <img src="images/dishes/samsa-chicken.jpg" alt="">
+            <div>
+              <h3>Самса с курицей</h3>
+              <p>Та же тандырная история, но с куриным бедром.</p>
+              <div class="meta">1 шт.</div>
+            </div>
+            <div class="cost">99 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="bake">
+            <img src="images/dishes/cheburek.jpg" alt="">
+            <div>
+              <h3>Чебурек с говядиной</h3>
+              <p>Тонкое тесто и сочная начинка с кинзой и укропом.</p>
+              <div class="meta">200 г</div>
+            </div>
+            <div class="cost">279 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="bake">
+            <img src="images/dishes/khachapuri.jpg" alt="">
+            <div>
+              <h3>Хачапури по-аджарски</h3>
+              <p>Лодочка с сулугуни, имеретинским сыром и желтком.</p>
+              <div class="meta">350 г</div>
+            </div>
+            <div class="cost">479 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="bake">
+            <img src="images/dishes/non-burger.jpg" alt="">
+            <div>
+              <h3>Нон-бургер</h3>
+              <p>Горячая лепёшка и говядина. Острый или нет — скажите сразу.</p>
+              <div class="meta">280 г</div>
+            </div>
+            <div class="cost">349 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="salads">
+            <img src="images/dishes/achik.jpg" alt="">
+            <div>
+              <h3>Ачик-чучук</h3>
+              <p>Помидоры, красный лук, укроп и базилик. К плову — обязательно.</p>
+              <div class="meta">160 г · острый / не острый</div>
+            </div>
+            <div class="cost">209 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="salads">
+            <img src="images/dishes/rayhon-salad.jpg" alt="">
+            <div>
+              <h3>Салат Райхон</h3>
+              <p>Фирменный: овощи, говядина, чеснок и базилик.</p>
+              <div class="meta">160 г</div>
+            </div>
+            <div class="cost">379 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="salads">
+            <img src="images/dishes/tashkent-salad.jpg" alt="">
+            <div>
+              <h3>Салат Ташкент</h3>
+              <p>Говядина, сельдерей, паприка и кисло-сладкий соус.</p>
+              <div class="meta">250 г</div>
+            </div>
+            <div class="cost">470 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="salads">
+            <img src="images/dishes/eggplant.jpg" alt="">
+            <div>
+              <h3>Хрустящие баклажаны</h3>
+              <p>С творожным сыром, мятой, кинзой и свит-чили.</p>
+              <div class="meta">350 г</div>
+            </div>
+            <div class="cost">499 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="sides">
+            <img src="images/dishes/dolma.jpg" alt="">
+            <div>
+              <h3>Долма из говядины</h3>
+              <p>Виноградные листья, фарш и рис. С чесночным соусом.</p>
+              <div class="meta">180 г</div>
+            </div>
+            <div class="cost">349 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="sides">
+            <img src="images/dishes/grill-veg.jpg" alt="">
+            <div>
+              <h3>Овощи на углях</h3>
+              <p>Баклажан, цукини, лук, перец и шампиньоны.</p>
+              <div class="meta">250 г</div>
+            </div>
+            <div class="cost">350 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="sweet">
+            <img src="images/dishes/pakhlava.jpg" alt="">
+            <div>
+              <h3>Бакинская пахлава</h3>
+              <p>Семь слоёв теста и грецкий орех.</p>
+              <div class="meta">2 шт.</div>
+            </div>
+            <div class="cost">309 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="sweet">
+            <img src="images/dishes/pakhlava-pistachio.jpg" alt="">
+            <div>
+              <h3>Пахлава с фисташками</h3>
+              <p>Тонкое тесто, топлёное масло и сироп.</p>
+              <div class="meta">2 шт.</div>
+            </div>
+            <div class="cost">329 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="sweet">
+            <img src="images/dishes/medovik.jpg" alt="">
+            <div>
+              <h3>Медовик</h3>
+              <p>Воздушные коржи и сметанный крем.</p>
+              <div class="meta">160 г</div>
+            </div>
+            <div class="cost">299 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="drinks">
+            <div class="thumb">Ч</div>
+            <div>
+              <h3>Зелёный узбекский чай</h3>
+              <p>Чайник на компанию. Как и положено в чайхане.</p>
+              <div class="meta">0,5 л</div>
+            </div>
+            <div class="cost">189 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="drinks">
+            <div class="thumb">А</div>
+            <div>
+              <h3>Айран</h3>
+              <p>Домашний, с укропом. Гости называют его огненным.</p>
+              <div class="meta">0,25 л</div>
+            </div>
+            <div class="cost">99 ₽</div>
+          </article>
+          <article class="menu-item" data-cat="drinks">
+            <div class="thumb">К</div>
+            <div>
+              <h3>Компот</h3>
+              <p>Из сухофруктов. Простой и правильный.</p>
+              <div class="meta">0,25 л</div>
+            </div>
+            <div class="cost">80 ₽</div>
+          </article>
+        </div>
+        <p class="menu-note">Также есть хачапури по-мегрельски и по-имеретински, шаверма Райхон, нон-бургер, том ям, соусы и чайные сборы. Полный список уточняйте в зале — меню живое.</p>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Как это выглядит</div>
+          <h2>Со столов гостей</h2>
+          <p>Не студийный глянец, а то, что приносят к вам: плов с перцем, лепёшка, чай, хачапури и тихий зал.</p>
+        </div>
+        <div class="gallery-grid">
+          <a href="images/gallery/g1.jpg" data-full="images/gallery/g1.jpg"><img src="images/gallery/g1.jpg" alt="Плов и долма"></a>
+          <a href="images/hero-4.jpg" data-full="images/hero-4.jpg"><img src="images/hero-4.jpg" alt="Интерьер"></a>
+          <a href="images/gallery/g6.jpg" data-full="images/gallery/g6.jpg"><img src="images/gallery/g6.jpg" alt="Хачапури"></a>
+          <a href="images/gallery/g10.jpg" data-full="images/gallery/g10.jpg"><img src="images/gallery/g10.jpg" alt="Стол гостей"></a>
+          <a href="images/gallery/g3.jpg" data-full="images/gallery/g3.jpg"><img src="images/gallery/g3.jpg" alt="Блюда Райхон"></a>
+          <a href="images/gallery/g11.jpg" data-full="images/gallery/g11.jpg"><img src="images/gallery/g11.jpg" alt="Ужин"></a>
+          <a href="images/gallery/g12.jpg" data-full="images/gallery/g12.jpg"><img src="images/gallery/g12.jpg" alt="Подача"></a>
+          <a href="images/gallery/g7.jpg" data-full="images/gallery/g7.jpg"><img src="images/gallery/g7.jpg" alt="Гости Райхон"></a>
+          <a href="images/gallery/g13.jpg" data-full="images/gallery/g13.jpg"><img src="images/gallery/g13.jpg" alt="Плов"></a>
+          <a href="images/hero-1.jpg" data-full="images/hero-1.jpg"><img src="images/hero-1.jpg" alt="Шашлык"></a>
+          <a href="images/gallery/g14.jpg" data-full="images/gallery/g14.jpg"><img src="images/gallery/g14.jpg" alt="Казы и плов"></a>
+          <a href="images/gallery/g5.jpg" data-full="images/gallery/g5.jpg"><img src="images/gallery/g5.jpg" alt="Сервировка"></a>
+        </div>
+        <button type="button" class="gallery-more" id="gallery-more">Посмотреть ещё</button>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Говорят гости</div>
+          <h2>5.0 — и это не случайность</h2>
+          <p>321 отзыв на Яндекс Картах. Атмосферу и интерьер хвалят почти все. Еду — те, кто берёт классику.</p>
+        </div>
+        <div class="review-stats reveal">
+          <div class="stat"><b>5.0</b><span>рейтинг</span></div>
+          <div class="stat"><b>321</b><span>отзыв</span></div>
+          <div class="stat"><b>100%</b><span>за атмосферу</span></div>
+          <div class="stat"><b>2026</b><span>Хорошее место</span></div>
+        </div>
+        <div class="reviews-wrap">
+        <div class="review-track">
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«100/10, моя любовь. Ташкентский плов отличнейший — каждый раз улетаю в космос. Долма и машхурда очень вкусные. А ещё здесь волшебный айран.»</p>
+            <footer><strong>Анастасия</strong><span>Яндекс Карты</span></footer>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«Оооооооо! Это просто объедение. Забежали с подругой и взяли плов. Быстро и безумно вкусно. А острый перчик прямо в сердце.»</p>
+            <footer><strong>Елена Боряк</strong><span>28 июля</span></footer>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«Увидели, что в узбекском заведении сидят узбеки, и решили, что это хороший знак. Так и оказалось. Манты — 100 из 10. Хачапури максимально сырное, прямо из печи.»</p>
+            <footer><strong>Nadya</strong><span>Яндекс Карты</span></footer>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«Готовят великолепно, вкус чувствуется как в Ташкенте.»</p>
+            <footer><strong>Назир Саидов</strong><span>3 июля</span></footer>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«Плов огонь. Шурпа наваристая. С собой взяли хачапури — дети были в восторге. Будете проходить мимо — загляните.»</p>
+            <footer><strong>Ксешка</strong><span>Яндекс Карты</span></footer>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«Душевное домашнее кафе. Без пафоса и лишней мути. Порции большие, очень вкусно, относительно недорого.»</p>
+            <footer><strong>Евгений С.</strong><span>Яндекс Карты</span></footer>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«Если любите вкусно и качественно — вам сюда. Всё по-честному: количество и качество мяса, красивая подача, не пересолено и не пережарено.»</p>
+            <footer><strong>Ирина</strong><span>Яндекс Карты</span></footer>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«За казы отдельный рахмет из Казахстана. Лепёшка горячая, чай что нужно, плов — один из вкуснейших, что пробовал.»</p>
+            <footer><strong>Данил Ерёмин</strong><span>Яндекс Карты</span></footer>
+          </article>
+        </div>
+        <div class="review-nav">
+          <button type="button" data-reviews="prev" aria-label="Предыдущие отзывы">←</button>
+          <button type="button" data-reviews="next" aria-label="Следующие отзывы">→</button>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section visit" id="visit">
+      <div class="container visit-grid">
+        <div class="visit-card reveal">
+          <div class="eyebrow">Как попасть</div>
+          <h2>Приходите голодными</h2>
+          <div class="info-row"><b>Адрес</b><span>Санкт-Петербург, Комендантский проспект, 66, корп. 1</span></div>
+          <div class="info-row"><b>Часы</b><span>Ежедневно с 10:00 до 01:00</span></div>
+          <div class="info-row"><b>Телефон</b><span><a href="tel:+79810150303">+7 (981) 015-03-03</a></span></div>
+          <div class="info-row"><b>Рядом</b><span>Остановка «Арцеуловская аллея» — 350 м. Приморский район, Коломяги.</span></div>
+          <div class="info-row"><b>Ещё</b><span>Парковка, летняя веранда, навынос, доставка, оплата картой и СБП.</span></div>
+          <div class="visit-actions">
+            <a class="btn btn-dark" href="tel:+79810150303">Позвонить</a>
+            <a class="btn btn-gold" href="https://wa.me/79810150303" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn-line" href="#" data-modal="book">Бронь стола</a>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe title="Райхон на карте" src="https://yandex.ru/map-widget/v1/?ll=30.2196%2C60.0405&z=16&oid=69587951550&ol=biz" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="images/logo.jpg" alt="">
+          <span>Райхон</span>
+        </div>
+        <nav class="footer-nav">
+          <a href="#menu">Меню</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#visit">Контакты</a>
+          <a href="https://yandex.ru/maps/org/raykhon/69587951550/" target="_blank" rel="noopener">Яндекс Карты</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>ИП Шералиев Кодыр Бегалиевич · ИНН 781639969721 · ОГРНИП 323470400131821</span>
+        <a class="made-by" href="https://github.com/ilyalycha23" target="_blank" rel="noopener">Made by ilyalycha</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/79810150303" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 2.1 17.2L1 23l5.9-1.1A11 11 0 0 0 20.5 3.5Zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-3.5.7.7-3.4-.2-.3A9 9 0 1 1 12 20.5Zm5-6.7c-.3-.1-1.6-.8-1.8-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.4 7.4 0 0 1-2.2-1.4 8.2 8.2 0 0 1-1.5-1.9c-.2-.3 0-.4.1-.6l.4-.5.1-.3a.5.5 0 0 0 0-.5c0-.1-.6-1.5-.8-2s-.4-.5-.6-.5h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1.1 2.7 11.5 11.5 0 0 0 4.4 3.9 15 15 0 0 0 1.5.5 3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/></svg>
+  </a>
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Закрыть">✕</button>
+    <img alt="Фото Райхон">
+  </div>
+
+  <div class="modal" id="book-modal">
+    <form class="modal-card" id="book-form">
+      <button type="button" class="modal-close" aria-label="Закрыть">✕</button>
+      <h3>Стол в Райхон</h3>
+      <p>Заявка уйдёт в WhatsApp. Мы перезвоним и подтвердим.</p>
+      <label>Имя</label>
+      <input name="name" required placeholder="Как к вам обращаться">
+      <label>Телефон</label>
+      <input name="phone" required type="tel" placeholder="+7">
+      <label>Дата</label>
+      <input name="date" required type="date">
+      <label>Время</label>
+      <input name="time" required type="time" value="19:00">
+      <label>Гостей</label>
+      <select name="guests">
+        <option>2</option><option>3</option><option selected>4</option><option>5</option><option>6+</option>
+      </select>
+      <label>Пожелание</label>
+      <textarea name="note" placeholder="День рождения, у окна, детский стул…"></textarea>
+      <button class="btn btn-gold" type="submit" style="width:100%;margin-top:18px">Отправить в WhatsApp</button>
+      <div class="form-ok">Открываем WhatsApp…</div>
+    </form>
+  </div>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Райхон",
+    "image": "images/hero-1.jpg",
+    "servesCuisine": "Uzbek",
+    "priceRange": "₽₽",
+    "telephone": "+79810150303",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Комендантский проспект, 66, корп. 1",
+      "addressLocality": "Санкт-Петербург",
+      "addressCountry": "RU"
+    },
+    "openingHours": "Mo-Su 10:00-01:00",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "321"
+    }
+  }
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

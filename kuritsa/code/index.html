@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuritsa — лаунж на Комендантском</title>
+  <meta name="description" content="Kuritsa — кальян-бар, бар и кафе на Комендантском проспекте, 54. Лофт с панорамным видом, премиум-кальяны, чайная карта и своя кухня. Рейтинг 5.0 на Яндекс Картах." />
+  <meta property="og:title" content="Kuritsa — лаунж на Комендантском" />
+  <meta property="og:description" content="Лофт над проспектом. Кальян, который попадает в настроение." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%230c0b0a'/><text x='32' y='44' text-anchor='middle' font-family='Georgia' font-size='36' fill='%23e8c9a0'>K</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=38" />
+</head>
+<body>
+  <div class="preloader" id="preloader">
+    <div class="preloader__mark">
+      <span class="wordmark">KURITSA</span>
+      <span class="script">lounge</span>
+    </div>
+    <div class="preloader__bar"><i></i></div>
+  </div>
+
+  <header class="header" id="header">
+    <a class="header__logo" href="#top">
+      <span class="wordmark">KURITSA</span>
+      <span class="script">lounge</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#about">О месте</a>
+      <a href="#hookah">Кальян</a>
+      <a href="#menu">Меню</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#visit">Контакты</a>
+    </nav>
+    <div class="header__actions">
+      <a class="header__phone" href="tel:+79310009054">+7 931 000-90-54</a>
+      <button class="btn btn--sm" data-open-booking>Стол</button>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__copy">
+        <div class="hero__main">
+          <p class="eyebrow">Комендантский проспект, 54 · 2 этаж</p>
+          <h1>
+            <span class="wordmark">KURITSA</span>
+            <span class="script">lounge</span>
+          </h1>
+          <p class="hero__lead">Лофт с панорамой на город. Кальян, который попадает в настроение. Место, куда возвращаются.</p>
+          <div class="hero__cta">
+            <button class="btn" data-open-booking>Забронировать стол</button>
+            <a class="btn btn--ghost" href="#menu">Смотреть меню</a>
+          </div>
+          <p class="hero__meta" id="openState">Закрыто · откроемся в 12:00</p>
+        </div>
+        <ul class="hero__stats">
+          <li><strong>5.0</strong><span>289 отзывов на Картах</span></li>
+          <li><strong>990 ₽</strong><span>чаша каждый день до 18:00</span></li>
+          <li><strong>12–02</strong><span>лофт над Комендой</span></li>
+        </ul>
+      </div>
+      <figure class="hero__visual">
+        <img src="images/interior/g11.jpg" alt="Неон Kuritsa lounge, кальян и чай на столе" />
+        <figcaption>Внутри. Неон, честерфилды, дым.</figcaption>
+      </figure>
+    </section>
+
+    <section class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <div class="ticker__group">
+          <span>Кальян 94%</span><span>Персонал 93%</span><span>Атмосфера 99%</span><span>Интерьер 100%</span><span>Чай 100%</span><span>Коктейли 100%</span>
+          <span>Кальян 94%</span><span>Персонал 93%</span><span>Атмосфера 99%</span><span>Интерьер 100%</span><span>Чай 100%</span><span>Коктейли 100%</span>
+          <span>Кальян 94%</span><span>Персонал 93%</span><span>Атмосфера 99%</span><span>Интерьер 100%</span><span>Чай 100%</span><span>Коктейли 100%</span>
+        </div>
+        <div class="ticker__group">
+          <span>Кальян 94%</span><span>Персонал 93%</span><span>Атмосфера 99%</span><span>Интерьер 100%</span><span>Чай 100%</span><span>Коктейли 100%</span>
+          <span>Кальян 94%</span><span>Персонал 93%</span><span>Атмосфера 99%</span><span>Интерьер 100%</span><span>Чай 100%</span><span>Коктейли 100%</span>
+          <span>Кальян 94%</span><span>Персонал 93%</span><span>Атмосфера 99%</span><span>Интерьер 100%</span><span>Чай 100%</span><span>Коктейли 100%</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__intro">
+        <p class="eyebrow">О нас</p>
+        <h2>Не кальянная «на районе».<br />Место силы на Коменде.</h2>
+      </div>
+      <div class="about__top">
+        <figure class="about__photo about__photo--tall">
+          <img src="images/interior/g20.jpg" alt="Кожаные диваны, зелёные лампы и панорама" />
+        </figure>
+        <div class="about__copy">
+          <p class="drop">Kuritsa — лаунж на втором этаже Комендантского, 54. Тёмные честерфилды, граффити на стене, классика в резных рамах и окна во всю комнату.</p>
+          <p>Днём сюда приходят на бизнес-перерыв: розетки у каждого стола, free Wi-Fi, чаша на премиум-брендах за 990. Вечером — дым, крафт, настолки и вид на проспект, который сам делает атмосферу.</p>
+          <p>Гости пишут одно и то же: мастера попадают во вкус, персонал не стоит над душой, а вытяжка работает так, что дым остаётся в кальяне, а не в одежде.</p>
+          <ul class="facts">
+            <li><em>2021</em><span>открылись на Коменде</span></li>
+            <li><em>5.0</em><span>рейтинг на Яндекс Картах</span></li>
+            <li><em>990 ₽</em><span>дневная чаша до 18:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <figure class="about__wide">
+        <div class="about__photo">
+          <img src="images/interior/hero2.jpg" alt="Панорамные окна и дым на фоне города" />
+        </div>
+        <figcaption>Панорамные окна на Комендантский. Вечером — отдельный вид.</figcaption>
+      </figure>
+    </section>
+
+    <section class="pillars">
+      <article>
+        <span>01</span>
+        <h3>Кальян</h3>
+        <p>Премиум-табаки, калауды, фруктовые чаши. Мастер подберёт крепость и микс под настроение — не «на глаз».</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>Бар</h3>
+        <p>Авторские коктейли, крафт «Породистый», IPA и стаут. Чайная карта от Лун Цзина до пуэра на соке.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>Кафе</h3>
+        <p>Своя кухня: рёбра BBQ, том-ям, карпаччо, лимонный тарт. Не «снеки из пакета» — нормальный ужин к кальяну.</p>
+      </article>
+    </section>
+
+    <section class="hookah" id="hookah">
+      <div class="hookah__inner">
+        <div class="hookah__media">
+          <img src="images/menu/hookah-day.jpg" alt="Кальянный мастер и чаша" />
+        </div>
+        <div class="hookah__text">
+          <p class="eyebrow">Сердце заведения</p>
+          <h2>Кальян, из-за которого остаются до трёх ночи.</h2>
+          <p>Гости сравнивают мастеров с теми, кто «всегда попадает в заказ». Большой выбор табаков, плотный дым без горечи, угли меняют вовремя. Можно прийти новичком — подскажут микс и крепость.</p>
+          <div class="price-list">
+            <div>
+              <b>Дневная чаша</b>
+              <span>12:00–18:00 · любой табак</span>
+              <strong>990 ₽</strong>
+            </div>
+            <div>
+              <b>Вечерняя чаша</b>
+              <span>после 18:00</span>
+              <strong>1 590 ₽</strong>
+            </div>
+            <div>
+              <b>Дуэт</b>
+              <span>два кальяна за стол</span>
+              <strong>2 590 ₽</strong>
+            </div>
+            <div>
+              <b>На фрукте</b>
+              <span>грейпфрут · гранат · ананас</span>
+              <strong>2 190 ₽</strong>
+            </div>
+          </div>
+          <p class="hookah__note">Перезабивка — 1 190 ₽. Дневной фрукт до 18:00 — 1 990 ₽. Электро-чаша Хука, 2×50 мин — 1 500 ₽.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="offer__inner">
+        <p class="eyebrow">Акция</p>
+        <h2>Ежедневно до 18:00 — чаша 990 ₽</h2>
+        <p>Лофт с видом на город, премиум-бренды, розетки за каждым столиком и free Wi-Fi. Идеальный формат на бизнес-перерыв или тихий дневной сет.</p>
+        <button class="btn" data-open-booking>Занять столик днём</button>
+      </div>
+      <figure>
+        <img src="images/interior/g7.jpg" alt="Вид из окна Kuritsa на Комендантский проспект" />
+      </figure>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="menu__head">
+        <p class="eyebrow">Меню</p>
+        <h2>Не только дым.</h2>
+        <p>Кухня, чайная классика, авторские отвары, лимонады и бар. Цены с витрины заведения, июль 2026.</p>
+      </div>
+      <div class="tabs" role="tablist">
+        <button class="is-active" data-tab="food">Кухня</button>
+        <button data-tab="tea">Чай</button>
+        <button data-tab="bar">Бар</button>
+        <button data-tab="hookahs">Кальяны</button>
+      </div>
+
+      <div class="menu__panel is-active" data-panel="food">
+        <div class="menu-list">
+          <article class="row">
+            <img src="images/food/ribs.jpg" alt="Рёбра BBQ" />
+            <div>
+              <h3>Рёбра BBQ</h3>
+              <p>Горячее, с которым не стыдно задержаться на вечер.</p>
+            </div>
+            <b>620 ₽</b>
+          </article>
+          <article class="row">
+            <img src="images/food/tomyam.jpg" alt="Том-ям" />
+            <div>
+              <h3>Том-ям</h3>
+              <p>Острый, горячий, как надо после второй чаши.</p>
+            </div>
+            <b>790 ₽</b>
+          </article>
+          <article class="row">
+            <img src="images/food/carpaccio.jpg" alt="Карпаччо из мяса птицы" />
+            <div>
+              <h3>Карпаччо из птицы</h3>
+              <p>Вяленое мясо на выбор — лёгкая закуска к чаю.</p>
+            </div>
+            <b>490 ₽</b>
+          </article>
+          <article class="row">
+            <img src="images/food/shrimp.jpg" alt="Креветки фри" />
+            <div>
+              <h3>Креветки фри</h3>
+              <p>С кисло-сладким соусом.</p>
+            </div>
+            <b>720 ₽</b>
+          </article>
+          <article class="row">
+            <img src="images/food/burger.jpg" alt="Бургер с курицей" />
+            <div>
+              <h3>Бургер с курицей</h3>
+              <p>Сытный сет, если пришли не только покурить.</p>
+            </div>
+            <b>580 ₽</b>
+          </article>
+          <article class="row">
+            <img src="images/food/cheesecake.jpg" alt="Чизкейк вишня-рикотта" />
+            <div>
+              <h3>Чизкейк вишня-рикотта</h3>
+              <p>И лимонный тарт, о котором пишут в отзывах.</p>
+            </div>
+            <b>460 ₽</b>
+          </article>
+          <article class="row">
+            <img src="images/food/strips.jpg" alt="Куриные стрипсы" />
+            <div>
+              <h3>Куриные стрипсы</h3>
+              <p>Классика к кальяну и пиву.</p>
+            </div>
+            <b>550 ₽</b>
+          </article>
+          <article class="row">
+            <img src="images/food/pasta.jpg" alt="Паста болоньезе" />
+            <div>
+              <h3>Паста болоньезе</h3>
+              <p>Если пришли поужинать, а не перекусить.</p>
+            </div>
+            <b>590 ₽</b>
+          </article>
+          <article class="row row--plain">
+            <div>
+              <h3>Курица в панировке с айдахо</h3>
+            </div>
+            <b>520 ₽</b>
+          </article>
+          <article class="row row--plain">
+            <div>
+              <h3>Начос с соусами</h3>
+            </div>
+            <b>470 ₽</b>
+          </article>
+          <article class="row row--plain">
+            <div>
+              <h3>Сырные палочки</h3>
+            </div>
+            <b>490 ₽</b>
+          </article>
+          <article class="row row--plain">
+            <div>
+              <h3>Батат фри с трюфельным соусом</h3>
+            </div>
+            <b>520 ₽</b>
+          </article>
+          <article class="row row--plain">
+            <div>
+              <h3>Борщ с говядиной и сметаной</h3>
+            </div>
+            <b>560 ₽</b>
+          </article>
+          <article class="row row--plain">
+            <div>
+              <h3>Блины с топпингом</h3>
+            </div>
+            <b>350 ₽</b>
+          </article>
+        </div>
+      </div>
+
+      <div class="menu__panel" data-panel="tea">
+        <div class="menu-list">
+          <article class="row">
+            <img src="images/menu/tea-puer.jpg" alt="Пуэр на соке" />
+            <div>
+              <h3>Пуэр на соке</h3>
+              <p>Вишня или гранат. 0,9 л</p>
+            </div>
+            <b>850 ₽</b>
+          </article>
+          <article class="row">
+            <img src="images/menu/tea-citrus.jpg" alt="Цитрусовый с имбирём" />
+            <div>
+              <h3>Цитрусовый с имбирём</h3>
+              <p>Зелёный чай, цитрус. 0,8 л</p>
+            </div>
+            <b>820 ₽</b>
+          </article>
+          <article class="row">
+            <img src="images/menu/tea-masala.jpg" alt="Масала" />
+            <div>
+              <h3>Масала</h3>
+              <p>Молочная основа и специи. 0,9 л</p>
+            </div>
+            <b>800 ₽</b>
+          </article>
+          <article class="row">
+            <img src="images/menu/lemonade.jpg" alt="Лимонад клубника-базилик" />
+            <div>
+              <h3>Клубника-базилик</h3>
+              <p>Авторский лимонад 0,4</p>
+            </div>
+            <b>450 ₽</b>
+          </article>
+        </div>
+        <div class="split-list">
+          <div>
+            <h4>Китайская классика</h4>
+            <ul>
+              <li><span>Лун Цзин</span><b>590 ₽</b></li>
+              <li><span>Жасминовая жемчужина</span><b>590 ₽</b></li>
+              <li><span>Най сян, молочный улун</span><b>600 ₽</b></li>
+              <li><span>Те Гуань Инь</span><b>650 ₽</b></li>
+              <li><span>Габа Лу Гу</span><b>790 ₽</b></li>
+              <li><span>Габа «Вересковый мёд»</span><b>950 ₽</b></li>
+              <li><span>Красная пагода</span><b>650 ₽</b></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Авторские и классика</h4>
+            <ul>
+              <li><span>Смородина с малиной, 0,9 л</span><b>820 ₽</b></li>
+              <li><span>Чай в ассортименте, 0,9 л</span><b>580 ₽</b></li>
+              <li><span>Ассам · Эрл Грей · травяной · наглый фрукт · гречишный</span></li>
+              <li><span>Лимонады 0,4: малина-смородина, вишня-грейпфрут, ананас-апельсин-лимон, клюква-апельсин</span><b>450 ₽</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu__panel" data-panel="bar">
+        <div class="split-list">
+          <div>
+            <h4>Кофе</h4>
+            <ul>
+              <li><span>Эспрессо / американо</span><b>220 ₽</b></li>
+              <li><span>Капучино</span><b>300 ₽</b></li>
+              <li><span>Бамбл / эспрессо-тоник</span><b>350 ₽</b></li>
+            </ul>
+            <h4>Крафт и пиво</h4>
+            <ul>
+              <li><span>Породистый Lager</span><b>390 ₽</b></li>
+              <li><span>Породистый Weiss / Stout</span><b>420 ₽</b></li>
+              <li><span>Bavarian Weizen</span><b>530 ₽</b></li>
+              <li><span>Welcome to the garden</span><b>520 ₽</b></li>
+              <li><span>DaDa в ассортименте</span><b>580 ₽</b></li>
+              <li><span>Tramontana IPA</span><b>590 ₽</b></li>
+              <li><span>Blueberry Hill</span><b>590 ₽</b></li>
+              <li><span>Radeberger Pilsner</span><b>630 ₽</b></li>
+              <li><span>Clausthaler б/а</span><b>400 ₽</b></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Коктейли</h4>
+            <ul>
+              <li><span>Aperol Spritz · Negroni · White Russian</span></li>
+              <li><span>Long Island · Martini Fiero & Tonic</span></li>
+              <li><span>Авторские: Mallini, Pink Tonic, Paloma Peach, San-Juan</span></li>
+            </ul>
+            <h4>Бар</h4>
+            <ul>
+              <li><span>Вино: белое, красное, игристое — бокал и бутылка</span></li>
+              <li><span>Виски, водка, ром, текила, бренди, Jägermeister</span></li>
+              <li><span>Coca-Cola / Fanta 0,33</span><b>350 ₽</b></li>
+              <li><span>Dr Pepper / Red Bull</span><b>400 ₽</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu__panel" data-panel="hookahs">
+        <div class="menu-list">
+          <article class="row">
+            <img src="images/menu/hookah-day.jpg" alt="Дневной кальян" />
+            <div>
+              <h3>Дневная чаша</h3>
+              <p>12:00–18:00, любой табак</p>
+            </div>
+            <b>990 ₽</b>
+          </article>
+          <article class="row">
+            <img src="images/menu/hookah-day.jpg" alt="Вечерний кальян" />
+            <div>
+              <h3>Вечерняя чаша</h3>
+              <p>После 18:00, любой табак</p>
+            </div>
+            <b>1 590 ₽</b>
+          </article>
+          <article class="row">
+            <img src="images/menu/hookah-fruit.jpg" alt="Кальян на фрукте" />
+            <div>
+              <h3>На фрукте</h3>
+              <p>Грейпфрут, гранат или ананас</p>
+            </div>
+            <b>2 190 ₽</b>
+          </article>
+          <article class="row">
+            <img src="images/menu/hookah-electro.jpg" alt="Электро-чаша Хука" />
+            <div>
+              <h3>Электро-чаша Хука</h3>
+              <p>2 сессии по 50 минут, миксы на выбор</p>
+            </div>
+            <b>1 500 ₽</b>
+          </article>
+          <article class="row row--plain">
+            <div>
+              <h3>Дуэт — два кальяна за стол</h3>
+            </div>
+            <b>2 590 ₽</b>
+          </article>
+          <article class="row row--plain">
+            <div>
+              <h3>Перезабивка</h3>
+            </div>
+            <b>1 190 ₽</b>
+          </article>
+          <article class="row row--plain">
+            <div>
+              <h3>Дневной кальян на фрукте до 18:00</h3>
+            </div>
+            <b>1 990 ₽</b>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="vibe">
+      <div class="vibe__text">
+        <p class="eyebrow">Как проводят здесь время</p>
+        <h2>Пришёл в два — ушёл в три ночи.</h2>
+        <p>Так пишут гости. Потому что кроме кальяна здесь есть чем занять стол: настолки вплоть до монополии в кальянной тематике, приставка, матчи на экранах и тихая музыка, при которой слышно друг друга.</p>
+      </div>
+      <ul class="vibe__list">
+        <li>Панорамные окна</li>
+        <li>Настольные игры</li>
+        <li>PlayStation</li>
+        <li>Спортивные трансляции</li>
+        <li>Крафтовое пиво</li>
+        <li>Чайная карта</li>
+        <li>Своя кухня</li>
+        <li>Free Wi-Fi и розетки</li>
+        <li>Можно с ноутбуком</li>
+        <li>Оплата картой</li>
+        <li>Бонусная система</li>
+        <li>День рождения за столом</li>
+      </ul>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="gallery__inner">
+        <div class="gallery__head">
+          <div>
+            <p class="eyebrow">Галерея</p>
+            <h2>Как это выглядит, когда ты уже внутри.</h2>
+          </div>
+          <p class="gallery__count"><span id="galIndex">01</span> / 08</p>
+        </div>
+        <button class="gallery__stage" id="galStage" type="button" aria-label="Открыть фото">
+          <img id="galMain" src="images/interior/hero2.jpg" alt="Дым и вид на город вечером" />
+          <span class="gallery__caption" id="galCaption">Дым и вид на город вечером</span>
+        </button>
+        <div class="gallery__thumbs" id="galThumbs">
+          <button type="button" class="is-active" data-src="images/interior/hero2.jpg" data-caption="Дым и вид на город вечером" data-alt="Дым и вид на город вечером"><img src="images/interior/hero2.jpg" alt="" /></button>
+          <button type="button" data-src="images/interior/g11.jpg" data-caption="Неон, честерфилды, дым на столе" data-alt="Неон Kuritsa lounge и кальян на столе"><img src="images/interior/g11.jpg" alt="" /></button>
+          <button type="button" data-src="images/interior/hero1.jpg" data-caption="Вечерний стол: напитки, десерт, кальян" data-alt="Вечерний стол с напитками"><img src="images/interior/hero1.jpg" alt="" /></button>
+          <button type="button" data-src="images/interior/g20.jpg" data-caption="Кожа, лампы, панорама на Коменду" data-alt="Интерьер с честерфилдами"><img src="images/interior/g20.jpg" alt="" /></button>
+          <button type="button" data-src="images/interior/g1.jpg" data-caption="Чай, кальян и окна во всю стену" data-alt="Гостья с кальяном и чаем у панорамы"><img src="images/interior/g1.jpg" alt="" /></button>
+          <button type="button" data-src="images/interior/g23.jpg" data-caption="Кальян на фрукте и картины в зале" data-alt="Вечер в зале"><img src="images/interior/g23.jpg" alt="" /></button>
+          <button type="button" data-src="images/interior/g9.jpg" data-caption="Диван у окна, вид на проспект" data-alt="Диван у окна и вид на Коменду"><img src="images/interior/g9.jpg" alt="" /></button>
+          <button type="button" data-src="images/interior/g7.jpg" data-caption="Днём — лофт с видом на Комендантский" data-alt="Вид из окна днём"><img src="images/interior/g7.jpg" alt="" /></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="reviews__inner">
+        <p class="eyebrow">Яндекс Карты</p>
+        <h2>5.0 · 289 отзывов</h2>
+        <div class="reviews__rows">
+          <article>
+            <p>Мой любимый уголок для идеального вечера. Кальянщики — профессионалы: вкус, крепость, дым.</p>
+            <b>Елена</b>
+          </article>
+          <article>
+            <p>Хожу почти каждый день. Моё место силы.</p>
+            <b>Vladimir V.</b>
+          </article>
+          <article>
+            <p>Пришли в 14 и ушли в 3 ночи. Нарды, кальян, цитрусовый чай.</p>
+            <b>Артур</b>
+          </article>
+          <article>
+            <p>Даже ДР тут праздновала. Всегда попадают в настроение и вкус.</p>
+            <b>Ksenia O.</b>
+          </article>
+        </div>
+        <a class="text-link" href="https://yandex.ru/maps/org/kuritsa/155807438586/reviews/" target="_blank" rel="noopener">Все отзывы на Картах</a>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="visit__info">
+        <p class="eyebrow">Визит</p>
+        <h2>Комендантский, 54.<br />Второй этаж. Дальше — диваны.</h2>
+        <dl>
+          <div>
+            <dt>Адрес</dt>
+            <dd>Санкт-Петербург, Комендантский проспект, 54–58 к1 ст1, 2 этаж<br />м. Комендантский проспект</dd>
+          </div>
+          <div>
+            <dt>Телефон</dt>
+            <dd><a href="tel:+79310009054">+7 (931) 000-90-54</a></dd>
+          </div>
+          <div>
+            <dt>Часы</dt>
+            <dd>Пн–чт, вс — 12:00–01:00<br />Пт–сб — 12:00–02:00</dd>
+          </div>
+          <div>
+            <dt>Средний чек</dt>
+            <dd>900–1 500 ₽</dd>
+          </div>
+        </dl>
+        <div class="visit__cta">
+          <button class="btn" data-open-booking>Забронировать</button>
+          <a class="btn btn--ghost" href="https://yandex.ru/maps/org/kuritsa/155807438586/" target="_blank" rel="noopener">Маршрут</a>
+        </div>
+      </div>
+      <div class="visit__map">
+        <iframe title="Kuritsa на карте" src="https://yandex.ru/map-widget/v1/?ll=30.230762%2C60.030892&z=16&oid=155807438586&ol=biz" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <span class="wordmark">KURITSA</span>
+      <span class="script">lounge</span>
+      <p>Кальян-бар · бар · кафе<br />Санкт-Петербург</p>
+    </div>
+    <div>
+      <p>18+. Табак вредит здоровью. Авторский сайт-концепт для Kuritsa.</p>
+      <p>Контент и фото — из открытых источников заведения: <a href="https://kuritsa-komendantskij-prospekt.clients.site/" target="_blank" rel="noopener">текущий сайт</a> и <a href="https://yandex.ru/maps/org/kuritsa/155807438586/" target="_blank" rel="noopener">Яндекс Карты</a>.</p>
+    </div>
+    <a class="footer__made" href="https://github.com/ilyalycha23" target="_blank" rel="noopener">Made by <span>ilyalycha</span></a>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox__close" id="lightboxClose">Закрыть</button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Назад">←</button>
+    <img alt="" id="lightboxImg" />
+    <button type="button" class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Вперёд">→</button>
+  </div>
+
+  <div class="modal" id="booking" hidden>
+    <div class="modal__panel">
+      <button type="button" class="modal__x" data-close-booking aria-label="Закрыть">×</button>
+      <p class="eyebrow">Бронь</p>
+      <h2>Занять стол</h2>
+      <p>Напишите — перезвоним или ответим в WhatsApp. В пик лучше бронировать заранее.</p>
+      <form id="bookingForm">
+        <label>Имя<input name="name" required placeholder="Как к вам обращаться" /></label>
+        <label>Телефон<input name="phone" type="tel" required placeholder="+7" /></label>
+        <div class="form-row">
+          <label>Дата<input name="date" type="date" required /></label>
+          <label>Время<input name="time" type="time" required /></label>
+        </div>
+        <label>Гостей
+          <select name="guests">
+            <option>2</option><option>3</option><option selected>4</option><option>5</option><option>6+</option>
+          </select>
+        </label>
+        <label>Комментарий<textarea name="note" rows="3" placeholder="День рождения, у окна, кальян днём…"></textarea></label>
+        <button class="btn" type="submit">Отправить в WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js?v=5"></script>
+</body>
+</html>

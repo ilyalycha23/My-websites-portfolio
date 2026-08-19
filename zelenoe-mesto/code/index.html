@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Зелёное место — кофейня-пекарня на Плесецкой</title>
+  <meta name="description" content="Уютная кофейня-пекарня в Юнтолово: живые растения, пение канареек, свежие круассаны и авторский кофе. Плесецкая, 14. Ежедневно 8:00–22:00.">
+  <meta name="theme-color" content="#2d4a38">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,560;0,9..144,700;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <meta property="og:title" content="Зелёное место — кофейня-пекарня">
+  <meta property="og:description" content="Зелёный островок в каменных джунглях Юнтолово. Кофе, свежая выпечка и чик-чирик канареек.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:image" content="images/hero-1.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Зелёное место",
+    "alternateName": ["Green Place", "Чик-Чирик"],
+    "description": "Кофейня-пекарня с живыми растениями и канарейками в Юнтолово.",
+    "telephone": "+79522329568",
+    "url": "https://t.me/green_place_bakery",
+    "image": "images/hero-1.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Плесецкая улица, 14",
+      "addressLocality": "Санкт-Петербург",
+      "postalCode": "197373",
+      "addressCountry": "RU"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 60.035256, "longitude": 30.218572 },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "08:00",
+      "closes": "22:00"
+    },
+    "servesCuisine": ["кофе", "выпечка", "завтраки"],
+    "priceRange": "₽₽",
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "ratingCount": "402" }
+  }
+  </script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vine vine-left" aria-hidden="true">
+    <svg viewBox="0 0 80 1400" preserveAspectRatio="none">
+      <path class="vine-path" d="M42 0 C 28 90, 62 170, 36 260 C 10 350, 70 430, 40 530 C 12 630, 68 720, 38 820 C 14 920, 64 1010, 40 1120 C 22 1220, 54 1320, 40 1400"/>
+    </svg>
+  </div>
+  <button class="kari-buddy" id="kariBuddy" type="button" title="Кари. Нажми — она споёт">
+    <svg viewBox="0 0 90 70" aria-hidden="true">
+      <ellipse cx="48" cy="38" rx="22" ry="16" fill="#f2c94c"/>
+      <ellipse cx="62" cy="28" rx="12" ry="10" fill="#f7d76a"/>
+      <circle cx="67" cy="25" r="1.7" fill="#1c241e"/>
+      <path d="M74 27 l7-2 l-7 5z" fill="#e09a3a"/>
+      <path d="M30 38 q-12 2 -18 12 q10-4 18-6" fill="#e8bc3d"/>
+      <path d="M38 50 q4 10 12 12" stroke="#c9a03a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <path d="M48 52 q6 10 14 10" stroke="#c9a03a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    </svg>
+    <span>Кари</span>
+  </button>
+
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-bird" aria-hidden="true">
+        <svg viewBox="0 0 90 70"><ellipse cx="48" cy="38" rx="22" ry="16" fill="#f2c94c"/><ellipse cx="62" cy="28" rx="12" ry="10" fill="#f7d76a"/><circle cx="67" cy="25" r="1.7" fill="#1c241e"/><path d="M74 27 l7-2 l-7 5z" fill="#e09a3a"/></svg>
+      </div>
+      <p class="loader-chirp" id="loaderChirp">чик</p>
+      <p class="loader-name">Зелёное место</p>
+    </div>
+  </div>
+
+  <a class="skip" href="#main">К содержанию</a>
+
+  <header class="nav" id="nav">
+    <a class="nav-logo" href="#top">
+      <img src="images/logo.jpg" alt="Зелёное место">
+      <span class="nav-word">
+        <em>Зелёное место</em>
+        <small>кофейня · пекарня</small>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Основное меню">
+      <a href="#place">Место</a>
+      <a href="#birds">Птицы</a>
+      <a href="#menu">Меню</a>
+      <a href="#gallery">Фото</a>
+      <a href="#words">Гости</a>
+      <a href="#visit">Сюда</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="sound-btn" id="soundBtn" type="button" aria-pressed="false" title="Включить пение канареек">
+        <span class="sound-dot"></span>
+        <span>чик-чирик</span>
+      </button>
+      <a class="nav-phone" href="tel:+79522329568">
+        <small>позвонить</small>
+        +7 952 232-95-68
+      </a>
+    </div>
+    <button class="burger" id="burger" type="button" aria-label="Открыть меню">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#place">Место</a>
+    <a href="#birds">Птицы</a>
+    <a href="#menu">Меню</a>
+    <a href="#gallery">Фото</a>
+    <a href="#words">Гости</a>
+    <a href="#visit">Сюда</a>
+    <a class="menu-call" href="tel:+79522329568">Позвонить</a>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-photo">
+        <img src="images/hero-1.jpg" alt="Зал кофейни: растения, барная стойка и витрина с выпечкой">
+        <div class="hero-veil"></div>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="live-dot" id="liveDot"></span>
+          <span id="liveLabel">Плесецкая, 14 · Юнтолово</span>
+        </p>
+        <h1>
+          <span class="h1-soft">Ваш зелёный островок</span>
+          <span class="h1-big">в каменных<br>джунглях</span>
+        </h1>
+        <p class="hero-lead">
+          Кофейня-пекарня, где поют канарейки, растут живые растения
+          и пекут круассаны на сливочном масле. Не сеть. Место с душой.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-gold" href="#visit">Прийти на Плесецкую</a>
+          <a class="btn btn-ghost" href="#menu">Смотреть меню</a>
+        </div>
+        <div class="hero-meta">
+          <div>
+            <strong>4,7</strong>
+            <span>на Яндекс Картах · Хорошее место 2026</span>
+          </div>
+          <div>
+            <strong>8:00–22:00</strong>
+            <span>каждый день, без выходных</span>
+          </div>
+          <div>
+            <strong>до 15:00</strong>
+            <span>завтраки и dog-friendly −10%</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-polaroids">
+        <figure class="polaroid rot-l">
+          <img src="images/g-kari2.jpg" alt="Жёлтые канарейки в просторной клетке">
+          <figcaption>здесь чик-чирикают</figcaption>
+        </figure>
+        <figure class="polaroid rot-r">
+          <img src="images/food-croissant.jpg" alt="Свежие круассаны на сливочном масле">
+          <figcaption>не заморозка</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>живые растения</span><i></i>
+        <span>канарейка Кари</span><i></i>
+        <span>круассаны как в Париже</span><i></i>
+        <span>можно с собакой</span><i></i>
+        <span>завтраки до 15:00</span><i></i>
+        <span>6-й напиток за 1 ₽</span><i></i>
+        <span>книжный уголок</span><i></i>
+        <span>после 21:00 скидка на выпечку</span><i></i>
+        <span>живые растения</span><i></i>
+        <span>канарейка Кари</span><i></i>
+        <span>круассаны как в Париже</span><i></i>
+        <span>можно с собакой</span><i></i>
+        <span>завтраки до 15:00</span><i></i>
+        <span>6-й напиток за 1 ₽</span><i></i>
+        <span>книжный уголок</span><i></i>
+        <span>после 21:00 скидка на выпечку</span><i></i>
+      </div>
+    </div>
+
+    <section class="place" id="place">
+      <div class="place-intro">
+        <p class="kicker">Не просто кофе</p>
+        <h2>Место, где всегда тепло, вкусно и уютно</h2>
+        <p class="lede">
+          Когда-то нас знали как «Чик-Чирик» и «Птичку». С 2024-го мы —
+          <em>Зелёное место</em>. Green Place. Тот же двор, те же руки,
+          те же птицы. Только ещё зеленее.
+        </p>
+      </div>
+
+      <blockquote class="manifesto">
+        <p>Мы любим всё живое, настоящее и зелёное. Поэтому у нас только живые растения, птицы и живое общение.</p>
+        <cite>из дневника кофейни, июнь 2024</cite>
+      </blockquote>
+
+      <div class="place-grid">
+        <article class="place-card">
+          <img src="images/g-flowers.jpg" alt="Стакан с подсолнухами на фоне полок с живыми растениями">
+          <div>
+            <h3>Растения настоящие</h3>
+            <p>Не пластик «для интерьера». Фикусы, сансевиерии, мох и цветы, которые хочется унести домой — гости так и пишут.</p>
+          </div>
+        </article>
+        <article class="place-card">
+          <img src="images/g-whoopie.jpg" alt="Кофе с латте-артом, булочка с корицей и печенье на деревянном столе">
+          <div>
+            <h3>Выпечка не из морозилки</h3>
+            <p>Круассаны на сливочном масле, улитки с корицей, хлеб, сосиски в тесте. Гости сравнивают с Парижем — и не ради комплимента.</p>
+          </div>
+        </article>
+        <article class="place-card">
+          <img src="images/g-cups.jpg" alt="Зелёная керамическая кружка с ботаническим рисунком">
+          <div>
+            <h3>Кофе, к которому возвращаются</h3>
+            <p>Мягкий, без горечи. Вишнёвый капучино, раф ежевика-барбарис, матча из Японии. Бариста знают постоянников по имени.</p>
+          </div>
+        </article>
+        <article class="place-card">
+          <img src="images/g-dog.jpg" alt="Корги в кофейне — сюда можно с собакой">
+          <div>
+            <h3>Собаки — свои</h3>
+            <p>Dog-friendly каждый день до 15:00: −10% на весь ассортимент к кофе. Детский уголок, книги, бесплатная горячая вода.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="birds" id="birds">
+      <div class="birds-copy">
+        <p class="kicker">чик-чирик</p>
+        <h2>Здесь живут канарейки. Одна из них — Кари.</h2>
+        <p>
+          Не колонка с «звуками леса». Живые птицы в просторной клетке,
+          за которыми ухаживают. Гости здороваются с ними, дети забегают
+          «посмотреть на птичек», а взрослые остаются дольше, чем планировали.
+        </p>
+        <p>
+          Кари — местная знаменитость. Ей оставляют приветы в отзывах.
+          Если придёте — поздоровайтесь. Она отвечает.
+        </p>
+        <ul class="birds-list">
+          <li>Просторная клетка, не витрина</li>
+          <li>Пение — часть утра на Плесецкой</li>
+          <li>Можно с собакой, птицы к этому привыкли</li>
+        </ul>
+        <button class="btn btn-gold" id="chirpBtn" type="button">Послушать, как чирикают</button>
+      </div>
+      <div class="birds-photos">
+        <figure>
+          <img src="images/g-breakfast.jpg" alt="Жёлтая канарейка на деревянной жёрдочке">
+          <figcaption>Кари и подруги</figcaption>
+        </figure>
+        <figure>
+          <img src="images/video-still.jpg" alt="Три канарейки в клетке">
+        </figure>
+        <figure>
+          <img src="images/interior-1.jpg" alt="Канарейка крупным планом">
+        </figure>
+      </div>
+    </section>
+
+    <section class="hours-strip" id="nowStrip">
+      <div>
+        <p class="now-label" id="nowGreeting">Добрый вечер</p>
+        <h2 id="nowTitle">Загляните — или приходите утром</h2>
+        <p id="nowText">Завтраки до 15:00. После 21:00 — скидка на выпечку. Кари уже, возможно, дремлет.</p>
+      </div>
+      <div class="hours-clock">
+        <span id="nowTime">--:--</span>
+        <small>Санкт-Петербург</small>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="menu-head">
+        <p class="kicker">меню</p>
+        <h2>Не витрина сети.<br>То, что пекут и варят здесь.</h2>
+        <p class="lede">Цены с витрины и карт, лето 2026. Сезонные рафы и «Азия спешл» появляются и уходят — спрашивайте бариста, они в этом кайфуют.</p>
+      </div>
+
+      <div class="menu-tabs" role="tablist">
+        <button class="is-on" data-tab="coffee" type="button">Кофе и чай</button>
+        <button data-tab="asia" type="button">Азия спешл</button>
+        <button data-tab="bake" type="button">Выпечка</button>
+        <button data-tab="sweet" type="button">Десерты</button>
+        <button data-tab="kitchen" type="button">Завтраки и супы</button>
+      </div>
+
+      <div class="menu-panels">
+        <div class="menu-panel is-on" data-panel="coffee">
+          <div class="menu-split">
+            <div class="board">
+              <h3>Классика</h3>
+              <p class="board-note">0.25 · 0.4 · 0.5</p>
+              <ul>
+                <li><span>Эспрессо</span><b>179 · 189</b></li>
+                <li><span>Американо</span><b>179 · 189</b></li>
+                <li><span>Капучино</span><b>199 · 249 · 259</b></li>
+                <li><span>Латте</span><b>199 · 249 · 289</b></li>
+                <li><span>Раф</span><b>209 · 279 · 299</b></li>
+                <li><span>Флэт уайт</span><b>229 · 289</b></li>
+                <li><span>Мокка</span><b>289</b></li>
+              </ul>
+              <h3>Не кофе</h3>
+              <ul>
+                <li><span>Матча, Япония</span><b>239 · 259 · 279</b></li>
+                <li><span>Фреш-матча</span><b>389</b></li>
+                <li><span>Какао</span><b>249 · 269 · 289</b></li>
+                <li><span>Чай листовой 0.4 / 0.6</span><b>129 · 169</b></li>
+                <li><span>Чай пакетированный</span><b>89</b></li>
+              </ul>
+            </div>
+            <div class="board board-gold">
+              <h3>Фирменные</h3>
+              <ul>
+                <li><span>Раф ежевика — барбарис</span><b>299</b></li>
+                <li><span>Раф «Арахис в кубе»</span><b>309</b></li>
+                <li><span>Раф ананас — карамель</span><b>309</b></li>
+                <li><span>Фреш-бамбл</span><b>389</b></li>
+              </ul>
+              <p class="hint">Растительное молоко Planto (овсяное, кокосовое, миндальное) +65 ₽. Вишнёвый капучино и сиропы — спросите, что сегодня на барной.</p>
+              <div class="perk">
+                <strong>6-й напиток — за 1 ₽</strong>
+                <span>Простая карта лояльности. Бонусы копятся сами.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="asia">
+          <div class="asia-intro">
+            <img src="images/interior-3.jpg" alt="Сезонное меню Азия спешл">
+            <div>
+              <h3>Азия спешл</h3>
+              <p>Горячие или холодные, все 0.4. То меню, из-за которого хочется зайти «просто посмотреть, что сегодня».</p>
+              <ul class="asia-list">
+                <li>
+                  <div><strong>ЧайКо юаньян</strong><small>Китай · эспрессо, чёрный чай, молоко, сироп</small></div>
+                  <b>339 ₽</b>
+                </li>
+                <li>
+                  <div><strong>Ходзича</strong><small>Япония · жареный чай, молоко, сироп</small></div>
+                  <b>329 ₽</b>
+                </li>
+                <li>
+                  <div><strong>Матча</strong><small>зелёная · голубая · розовая</small></div>
+                  <b>299 ₽</b>
+                </li>
+                <li>
+                  <div><strong>Кофе по-вьетнамски</strong><small>эспрессо, сгущёнка, молоко</small></div>
+                  <b>299 ₽</b>
+                </li>
+                <li>
+                  <div><strong>Дальгона</strong><small>Корея · кофе, тростниковый сахар, белок, сыр, молоко</small></div>
+                  <b>339 ₽</b>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="bake">
+          <div class="food-grid">
+            <article class="food-card">
+              <img src="images/food-croissant.jpg" alt="Круассаны на сливочном масле">
+              <div>
+                <h3>Круассан на сливочном масле</h3>
+                <p>Классика, сливочный крем, бельгийский шоколад или домашняя карамель.</p>
+                <b>119 ₽</b>
+              </div>
+            </article>
+            <article class="food-card">
+              <img src="images/food-ulitka.jpg" alt="Улитка с корицей и сливочным кремом">
+              <div>
+                <h3>Улитка корица и слив. крем</h3>
+                <p>Та самая булочка, которую берут «ещё одну, себе домой».</p>
+                <b>169 ₽</b>
+              </div>
+            </article>
+            <article class="food-card">
+              <img src="images/hero-2.jpg" alt="Витрина с выпечкой">
+              <div>
+                <h3>Турноверы, гипфели, сосиски в тесте</h3>
+                <p>Картофель с сыром вместо завтрака. Шоколадный гипфель. Сосиска из рубленного мяса.</p>
+                <b>спросите на витрине</b>
+              </div>
+            </article>
+            <article class="food-card">
+              <img src="images/g-pastry.jpg" alt="Свежая выпечка">
+              <div>
+                <h3>После 21:00</h3>
+                <p>Скидка на выпечку. Если шли мимо вечером — это знак.</p>
+                <b>вечерняя цена</b>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="sweet">
+          <div class="food-grid">
+            <article class="food-card">
+              <img src="images/food-grinch.jpg" alt="Торт Гринч малина-фисташка">
+              <div>
+                <h3>Гринч малина-фисташка</h3>
+                <p>Зелёный бисквит, крем и ягода. Самый «зелёное место» торт на витрине.</p>
+                <b>269 ₽</b>
+              </div>
+            </article>
+            <article class="food-card">
+              <img src="images/food-sebastian.jpg" alt="Сан-Себастьян с матчей">
+              <div>
+                <h3>Сан-Себастьян с матчей</h3>
+                <p>Для тех, кто пьёт матчу «как основную причину прийти».</p>
+                <b>329 ₽</b>
+              </div>
+            </article>
+            <article class="food-card">
+              <img src="images/food-eclair.jpg" alt="Эклеры">
+              <div>
+                <h3>Эклеры</h3>
+                <p>Сливочный, кофейный или фисташковый заварной крем.</p>
+                <b>250 ₽</b>
+              </div>
+            </article>
+            <article class="food-card">
+              <img src="images/food-apple.jpg" alt="Яблочный пирог с корицей">
+              <div>
+                <h3>Яблочный пирог с корицей</h3>
+                <p>Домашний, тёплый, без лишней сладости.</p>
+                <b>259 ₽</b>
+              </div>
+            </article>
+            <article class="food-card">
+              <img src="images/food-truffle.jpg" alt="Пирожное трюфель">
+              <div>
+                <h3>Трюфель</h3>
+                <p>Маленький и опасный: берут «на один укус».</p>
+                <b>103 ₽</b>
+              </div>
+            </article>
+            <article class="food-card">
+              <img src="images/g-whoopie.jpg" alt="Десерты и кофе на столе">
+              <div>
+                <h3>Вупи-пай, Лакомка, Дайм</h3>
+                <p>И ещё «Лаванда»: сливочно-творожный крем, черника, белый шоколад.</p>
+                <b>на витрине сегодня</b>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="kitchen">
+          <div class="food-grid">
+            <article class="food-card">
+              <img src="images/g-syrniki.jpg" alt="Сырники">
+              <div>
+                <h3>Сырники</h3>
+                <p>Гости пишут «лучшие в городе». Мы просто печём их каждое утро.</p>
+                <b>73 ₽</b>
+              </div>
+            </article>
+            <article class="food-card">
+              <img src="images/g-sandwich.jpg" alt="Завтрак и сэндвич">
+              <div>
+                <h3>Завтраки до 15:00</h3>
+                <p>Английский, скрэмбл / омлет, тост с авокадо. Можно проспать и всё равно успеть.</p>
+                <b>8:00–15:00</b>
+              </div>
+            </article>
+            <article class="food-card">
+              <img src="images/g-soup.jpg" alt="Крем-суп">
+              <div>
+                <h3>Супчики</h3>
+                <p>Тыквенный — тот самый, из-за которого пишут отзывы. Ещё грибной с трюфельным маслом, томатный, морковный на кокосовом. Детский бульончик с курицей.</p>
+                <b>спрашивайте день</b>
+              </div>
+            </article>
+            <article class="food-card">
+              <img src="images/food-syrniki.jpg" alt="Сырники с подачи">
+              <div>
+                <h3>Средний счёт</h3>
+                <p>200–300 ₽. Кофе, булочка, можно посидеть. Без пафоса и без пластиковых улыбок.</p>
+                <b>200–300 ₽</b>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="menu-head">
+        <p class="kicker">как это выглядит</p>
+        <h2>Не стоковые круассаны.<br>Это Плесецкая, 14.</h2>
+      </div>
+      <div class="gallery-wall">
+        <button class="shot tall" data-full="images/hero-1.jpg" type="button"><img src="images/hero-1.jpg" alt="Барная стойка и растения"><span>зал</span></button>
+        <button class="shot" data-full="images/g-kari2.jpg" type="button"><img src="images/g-kari2.jpg" alt="Канарейки"><span>птицы</span></button>
+        <button class="shot" data-full="images/g-flowers.jpg" type="button"><img src="images/g-flowers.jpg" alt="Растения и стакан"><span>зелень</span></button>
+        <button class="shot wide" data-full="images/food-croissant.jpg" type="button"><img src="images/food-croissant.jpg" alt="Круассаны"><span>утро</span></button>
+        <button class="shot" data-full="images/g-cups.jpg" type="button"><img src="images/g-cups.jpg" alt="Кружка dream"><span>кружки</span></button>
+        <button class="shot tall" data-full="images/g-whoopie.jpg" type="button"><img src="images/g-whoopie.jpg" alt="Кофе и выпечка"><span>стол</span></button>
+        <button class="shot" data-full="images/g-dog.jpg" type="button"><img src="images/g-dog.jpg" alt="Собака в кофейне"><span>хвосты</span></button>
+        <button class="shot" data-full="images/g-latte.jpg" type="button"><img src="images/g-latte.jpg" alt="Латте"><span>кофе</span></button>
+        <button class="shot" data-full="images/g-merch.jpg" type="button"><img src="images/g-merch.jpg" alt="Авторские стаканы"><span>стаканы</span></button>
+        <button class="shot wide" data-full="images/hero-2.jpg" type="button"><img src="images/hero-2.jpg" alt="Витрина"><span>витрина</span></button>
+        <button class="shot" data-full="images/g-kari.jpg" type="button"><img src="images/g-kari.jpg" alt="Птички и мох"><span>детали</span></button>
+        <button class="shot" data-full="images/g-food1.jpg" type="button"><img src="images/g-food1.jpg" alt="Еда"><span>сегодня</span></button>
+      </div>
+      <button class="gallery-more" id="galleryMore" type="button">Смотреть ещё</button>
+    </section>
+
+    <section class="words" id="words">
+      <div class="menu-head">
+        <p class="kicker">227 отзывов · 4,7</p>
+        <h2>Гости говорят так, будто это их кухня.</h2>
+      </div>
+      <div class="notes">
+        <article class="note n1">
+          <p>«Ради местных круассанов иногда в принципе хочется по утрам жить. Ну и канарейки, которые поют просто как райские птички.»</p>
+          <span>Инкогнито · Яндекс Карты</span>
+        </article>
+        <article class="note n2">
+          <p>«Круассаны такие же вкусные, как и в Париже. Ещё прикольная музыка — не готовый плейлист для кафешек.»</p>
+          <span>Ekaterina · кофеман</span>
+        </article>
+        <article class="note n3">
+          <p>«Привет канарейке Кари, которая там живёт. Максимально душевное место. Девушки-сотрудницы просто ангелы.»</p>
+          <span>Анна Мироница</span>
+        </article>
+        <article class="note n4">
+          <p>«Мама приезжает в Зелёное место за кофе и круассаном даже из центра города.»</p>
+          <span>Елизавета Ческидова</span>
+        </article>
+        <article class="note n5">
+          <p>«Тыквенный суп заставил написать этот отзыв. Ивлев, Рамзи — кто бы ни был — не смогут сделать такой.»</p>
+          <span>Аннуш Гарлыев</span>
+        </article>
+        <article class="note n6">
+          <p>«Видно, что это место соткано из любви. Спасибо, родной Чик-Чирик.»</p>
+          <span>Павел Дмитрашина</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="visit-card">
+        <p class="kicker">приходите</p>
+        <h2>Плесецкая, 14.<br>Первый этаж. Юнтолово.</h2>
+        <ul class="visit-facts">
+          <li>
+            <span>Адрес</span>
+            <strong>Санкт-Петербург, Плесецкая ул., 14</strong>
+          </li>
+          <li>
+            <span>Часы</span>
+            <strong>ежедневно 8:00–22:00</strong>
+          </li>
+          <li>
+            <span>Телефон</span>
+            <strong><a href="tel:+79522329568">+7 (952) 232-95-68</a></strong>
+          </li>
+          <li>
+            <span>Как дойти</span>
+            <strong>остановка «Нижне-Каменская улица» — 150 м</strong>
+          </li>
+        </ul>
+        <div class="visit-links">
+          <a class="btn btn-gold" href="https://yandex.ru/maps/org/zelyonoye_mesto/175022000863/" target="_blank" rel="noopener">Открыть в Яндекс Картах</a>
+          <a class="btn btn-ghost" href="https://t.me/green_place_bakery" target="_blank" rel="noopener">Telegram</a>
+          <a class="btn btn-ghost" href="https://vk.com/greeenplace" target="_blank" rel="noopener">ВКонтакте</a>
+        </div>
+        <p class="tiny">Wi-Fi, можно с ноутбуком, можно с собакой, детский уголок, книги, велопарковка, зарядка, Яндекс Еда и самовывоз.</p>
+      </div>
+      <div class="map-wrap">
+        <iframe title="Зелёное место на карте" src="https://yandex.ru/map-widget/v1/?ol=biz&oid=175022000863&ll=30.218572,60.035256&z=16.5&l=map" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <img src="images/logo.jpg" alt="">
+      <p>Зелёное место · кофейня-пекарня<br>Плесецкая, 14 · Санкт-Петербург</p>
+    </div>
+    <p class="footer-note">Сайт собран по открытым данным Яндекс Карт, ВКонтакте и отзывам гостей. Меню живое — уточняйте у бариста.</p>
+    <a class="made-by" href="https://github.com/ilyalycha23" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 90 70" aria-hidden="true">
+        <ellipse cx="48" cy="38" rx="22" ry="16" fill="#f2c94c"/>
+        <ellipse cx="62" cy="28" rx="12" ry="10" fill="#f7d76a"/>
+        <circle cx="67" cy="25" r="1.7" fill="#1c241e"/>
+        <path d="M74 27 l7-2 l-7 5z" fill="#e09a3a"/>
+      </svg>
+      <span class="made-label">Made by</span>
+      <span class="made-name">ilyalycha</span>
+    </a>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" type="button" aria-label="Закрыть">×</button>
+    <img alt="">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

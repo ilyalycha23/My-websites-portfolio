@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Кусь — спешелти кофе на районе</title>
+  <meta name="description" content="Кафе Кусь в Петербурге: спешелти кофе, своя выпечка, завтраки до 15:00 и отдельное меню для собак. Три точки — Комендантский, Киришская, Среднерогатская." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=Gochi+Hand&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip" href="#day">К содержанию</a>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="bite-pop" aria-hidden="true">кусь!</div>
+
+  <div class="loader" id="loader">
+    <p class="loader-kicker">подожди секунду</p>
+    <div class="loader-word" aria-hidden="true">
+      <span>К</span><span>У</span><span>С</span><span class="bitten">Ь</span>
+    </div>
+    <p class="loader-sub">кофе уже на столе</p>
+  </div>
+
+  <header class="ticket" id="ticket">
+    <a class="ticket-brand" href="#top" aria-label="Кусь, наверх">
+      <span class="ticket-dot"></span>
+      КУСЬ
+    </a>
+    <nav class="ticket-nav" aria-label="Разделы">
+      <a href="#day">день</a>
+      <a href="#menu">меню</a>
+      <a href="#voices">отзывы</a>
+      <a href="#homes">адреса</a>
+    </nav>
+    <div class="ticket-meta">
+      <span class="live-dot" id="liveDot"></span>
+      <span id="liveLabel">открыто</span>
+      <span class="ticket-time" id="clock">09:00</span>
+    </div>
+    <a class="ticket-call" href="tel:+79819835197">бронь</a>
+    <button class="ticket-burger" id="menuBtn" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#day">день</a>
+    <a href="#menu">меню</a>
+    <a href="#voices">отзывы</a>
+    <a href="#homes">адреса</a>
+  </div>
+
+  <main id="top">
+    <section class="hero" aria-label="Кусь">
+      <div class="hero-sky" id="heroSky"></div>
+
+      <h1 class="wordmark" aria-label="Кусь">
+        <span>К</span><span>У</span><span>С</span><span>Ь</span>
+      </h1>
+
+      <div class="hero-bottom">
+        <p class="hero-line">
+          <span id="greet">доброе утро</span>.
+          Спешелти кофе, своя пекарня и завтраки — <em>на районе</em>.
+          Зачем ехать в центр, если можно сделать кусь у дома.
+        </p>
+        <div class="hero-cta">
+          <a class="btn-ink" href="#menu">что взять сегодня</a>
+          <a class="btn-ghost" href="https://t.me/kuscafe" target="_blank" rel="noopener">телеграм</a>
+        </div>
+      </div>
+
+      <div class="hero-shelf">
+        <figure class="polar">
+          <img src="images/place/hero-1.jpg" alt="Персиковый стакан Кусь на фоне Ultra City" />
+        </figure>
+        <figure class="polar">
+          <img src="images/place/hero-2.jpg" alt="Зал Кусь с неоновой волной" />
+        </figure>
+        <figure class="polar">
+          <img src="images/place/interior-3.jpg" alt="Собака в зале Кусь" />
+        </figure>
+        <figure class="polar">
+          <img src="images/place/guest-3.jpg" alt="Сырники и кофе на терраццо" />
+        </figure>
+        <figure class="polar">
+          <img src="images/dishes/hashbrown.jpg" alt="Хашбраун с беконом и пашотом" />
+        </figure>
+        <figure class="polar">
+          <img src="images/place/interior-1.jpg" alt="Свежая выпечка на противнях" />
+        </figure>
+        <figure class="polar">
+          <img src="images/place/guest-2.jpg" alt="Круассан с тамбовским окороком" />
+        </figure>
+        <figure class="polar">
+          <img src="images/place/hero-4.jpg" alt="Витрина Кусь" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="day" id="day">
+      <div class="day-sticky">
+        <div class="day-left">
+          <div class="day-clock" id="dayClock">09:14</div>
+          <p class="day-phase" id="dayPhase">первая чашка</p>
+          <ol class="day-beats" id="dayBeats">
+            <li class="is-on"><b>09</b> первая чашка</li>
+            <li><b>11</b> хашбраун и солнце</li>
+            <li><b>12</b> пекарня дышит</li>
+            <li><b>15</b> кухня переключает день</li>
+            <li><b>18</b> после района</li>
+            <li><b>21</b> последний кусь</li>
+          </ol>
+        </div>
+        <div class="day-frame">
+          <img id="dayPhoto" src="images/place/kirish-3.jpg" alt="Утро в Кусь" />
+          <img class="day-side" id="dayPhoto2" src="images/place/interior-1.jpg" alt="" />
+          <div class="day-caption">
+            <p id="dayCopy">Двери в 9:00. Пахнет круассанами и эспрессо. Если пришёл с хвостом — тебе тоже нальют воду и найдут место у окна.</p>
+            <span id="dayHint">круассан · капучино · тихий зал</span>
+          </div>
+        </div>
+        <div class="day-rail" id="dayRail" aria-hidden="true">
+          <span class="is-on">09</span><span>11</span><span>12</span><span>15</span><span>18</span><span>21</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="menu-top">
+        <div class="menu-intro">
+          <h2>Меню</h2>
+          <p class="menu-lead">
+            Завтраки до 15:00, на Киришской — до 13:00. Потом зал переключает день:
+            супы, паста, щечки. Кофе — весь день.
+          </p>
+          <div class="chips" role="tablist" aria-label="Фильтр меню">
+            <button class="chip is-on" data-cat="now" role="tab" aria-selected="true">сейчас</button>
+            <button class="chip" data-cat="breakfast" role="tab">утро</button>
+            <button class="chip" data-cat="allday" role="tab">весь день</button>
+            <button class="chip" data-cat="dinner" role="tab">после 15:00</button>
+            <button class="chip" data-cat="drinks" role="tab">напитки</button>
+          </div>
+          <p class="menu-now" id="menuNow"></p>
+        </div>
+        <div class="menu-peek" aria-hidden="true">
+          <img src="images/dishes/hashbrown.jpg" alt="" />
+          <img src="images/dishes/syrniki-coffee.jpg" alt="" />
+          <img src="images/dishes/croissant-ham.jpg" alt="" />
+          <img src="images/place/sredne-5.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="menu-board" id="menuBoard"></div>
+
+      <p class="menu-note">
+        Цены с <a href="https://yandex.ru/maps/org/kus/179282171804/menu/" target="_blank" rel="noopener">Яндекс Карт</a>,
+        обновление 1 июля. Сезонные рафы, бамбл и лимонады спрашивайте на стойке —
+        сиропы варят сами.
+      </p>
+    </section>
+
+    <section class="tails" id="tails">
+      <div class="tails-copy">
+        <h2>Можно с хвостом.<br />Есть меню-кусь.</h2>
+        <p>
+          Гости приходят с собаками так же спокойно, как с ноутбуком.
+          Для людей — розетки, вайфай
+          и диван у окна. Летом ещё и столики на улице.
+        </p>
+        <ul class="tails-list">
+          <li>можно со всеми животными</li>
+          <li>своя пекарня, круассаны с утра</li>
+          <li>спешелти кофе, не «просто капучино»</li>
+          <li>по выходным — вино и коктейли</li>
+        </ul>
+      </div>
+      <figure class="tails-shot">
+        <img src="images/place/sredne-4.jpg" alt="Собаки в зале Кусь" />
+      </figure>
+      <img class="tails-bear" src="images/bear.svg" alt="" aria-hidden="true" />
+    </section>
+
+    <section class="room" id="room">
+      <h2 class="room-title">Посмотри зал,<br />как будто уже сел</h2>
+      <div class="room-scatter">
+        <button class="shot shot-1" data-full="images/place/hero-2.jpg">
+          <img src="images/place/hero-2.jpg" alt="Интерьер Кусь: стойка, неоновая волна, растения" />
+        </button>
+        <button class="shot shot-2" data-full="images/place/interior-1.jpg">
+          <img src="images/place/interior-1.jpg" alt="Свежая выпечка на противнях" />
+        </button>
+        <button class="shot shot-3" data-full="images/place/guest-1.jpg">
+          <img src="images/place/guest-1.jpg" alt="Завтрак и раф на терраццо-столе" />
+        </button>
+        <button class="shot shot-4" data-full="images/place/interior-2.jpg">
+          <img src="images/place/interior-2.jpg" alt="Салат с креветками и авокадо-тост" />
+        </button>
+        <button class="shot shot-5" data-full="images/place/hero-4.jpg">
+          <img src="images/place/hero-4.jpg" alt="Витрина Кусь с синим персонажем и надписью и суп" />
+        </button>
+      </div>
+    </section>
+
+    <section class="voices" id="voices">
+      <h2>Гости говорят</h2>
+      <p class="voices-lead">Настоящие отзывы с Яндекс Карт. Записку можно подвинуть.</p>
+      <div class="tabletop" id="tabletop"></div>
+      <a class="voices-all" href="https://yandex.ru/maps/org/kus/179282171804/reviews/" target="_blank" rel="noopener">все 290 отзывов на картах →</a>
+    </section>
+
+    <section class="homes" id="homes">
+      <div class="homes-intro">
+        <h2>Три дома.<br />Один вайб.</h2>
+        <p class="homes-lead">
+          Кусь открывается в новых районах Петербурга — там, где не хватает
+          хорошего кофе и нормального зала. Бронь столов по одному номеру.
+        </p>
+        <a class="homes-phone" href="tel:+79819835197">+7 981 983-51-97</a>
+      </div>
+      <div class="windows">
+        <article class="window is-on" data-map="https://yandex.ru/maps/org/kus/179282171804/">
+          <img src="images/place/hero-4.jpg" alt="Кусь на Комендантском" />
+          <p class="window-area">приморский · коломяги</p>
+          <h3>Комендантский, 65</h3>
+          <p>Ultra City. Светлый зал, летняя веранда, пробежки Time4run по воскресеньям.</p>
+          <p class="window-meta">09:00–22:00 · 4,8 · +7 981 003-79-35</p>
+          <a href="https://yandex.ru/maps/org/kus/179282171804/" target="_blank" rel="noopener">открыть карту</a>
+        </article>
+        <article class="window" data-map="https://yandex.ru/maps/org/kus/15217179724/">
+          <img src="images/place/kirish-3.jpg" alt="Бариста в Кусь на Киришской" />
+          <p class="window-area">калининский</p>
+          <h3>Киришская, 2А</h3>
+          <p>Первый дом сети. Завтраки здесь до 13:00. Рядом Гражданский проспект.</p>
+          <p class="window-meta">09:00–22:00 · 4,6 · +7 921 374-71-94</p>
+          <a href="https://yandex.ru/maps/org/kus/15217179724/" target="_blank" rel="noopener">открыть карту</a>
+        </article>
+        <article class="window" data-map="https://yandex.ru/maps/org/kus/58354045828/">
+          <img src="images/place/sredne-1.jpg" alt="Зал Кусь на Среднерогатской" />
+          <p class="window-area">московский · звёздная</p>
+          <h3>Среднерогатская, 13к1</h3>
+          <p>ЖК Триумф Парк. Год кафе, винил и игристое по особым вечерам.</p>
+          <p class="window-meta">09:00–22:00 · +7 981 983-51-97</p>
+          <a href="https://yandex.ru/maps/org/kus/58354045828/" target="_blank" rel="noopener">открыть карту</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="come" id="come">
+      <p class="come-phone">
+        <a href="tel:+79819835197">+7 981 983-51-97</a>
+      </p>
+      <p class="come-say">бронь столов · напиши или позвони</p>
+      <div class="come-links">
+        <a href="https://t.me/kuscafe" target="_blank" rel="noopener">telegram</a>
+        <a href="https://vk.com/kus.cafe" target="_blank" rel="noopener">вконтакте</a>
+        <a href="https://yandex.ru/maps/org/kus/179282171804/" target="_blank" rel="noopener">яндекс карты</a>
+      </div>
+      <p class="come-foot">доставка с Комендантского и Среднерогатской — через Яндекс Еду</p>
+      <a class="come-credit" href="https://github.com/ilyalycha23" target="_blank" rel="noopener">Made by ilyalycha</a>
+    </section>
+  </main>
+
+  <aside class="buddy" id="buddy" aria-hidden="true">
+    <img src="images/bear.svg" alt="" />
+    <span>кусь</span>
+  </aside>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">закрыть</button>
+    <img id="lightboxImg" alt="" />
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

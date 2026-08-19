@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MEDUZA — бар на Комендантском</title>
+  <meta name="description" content="Уютный бар Meduza на Комендантском проспекте, 66к1. Свежее пиво, корейская кухня, настолки и летняя веранда. Рейтинг 4,8 на Яндекс Картах. Хорошее место 2026." />
+  <meta name="theme-color" content="#0a0b0a" />
+  <meta property="og:title" content="MEDUZA — бар на Комендантском" />
+  <meta property="og:description" content="Пиво, кимчи, настолки. Бар, в который хочется вернуться." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:image" content="assets/logo/logo.jpg" />
+  <link rel="icon" href="assets/logo/logo.jpg" />
+  <link rel="apple-touch-icon" href="assets/logo/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true">
+    <span class="glow__orb glow__orb--a"></span>
+    <span class="glow__orb glow__orb--b"></span>
+  </div>
+  <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span></span></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <div class="preloader" id="preloader">
+    <div class="preloader__mark">
+      <img src="assets/logo/logo.jpg" alt="" />
+      <p class="preloader__word">MEDUZA</p>
+    </div>
+  </div>
+
+  <a class="skip" href="#main">К содержимому</a>
+
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#top" aria-label="Meduza, наверх">
+      <img src="assets/logo/logo.jpg" alt="" />
+      <span>MEDUZA</span>
+    </a>
+    <nav class="nav__links" aria-label="Разделы">
+      <a href="#about">О баре</a>
+      <a href="#promo">Акции</a>
+      <a href="#menu">Меню</a>
+      <a href="#gallery">Фото</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#visit">Как дойти</a>
+    </nav>
+    <div class="nav__actions">
+      <time class="nav__clock" id="clock" title="Московское время">—</time>
+      <span class="live-dot" id="navStatus" data-live>закрыто</span>
+      <a class="btn btn--sm" href="tel:+79990605044">Бронь</a>
+      <button class="nav__burger" id="burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__meta">
+      <time class="nav__clock" id="clockMobile" title="Московское время">—</time>
+      <span class="live-dot" data-live>закрыто</span>
+    </div>
+    <a href="#about">О баре</a>
+    <a href="#promo">Акции</a>
+    <a href="#menu">Меню</a>
+    <a href="#gallery">Фото</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#visit">Как дойти</a>
+    <a class="btn" href="tel:+79990605044">Позвонить · +7 999 060-50-44</a>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__copy">
+        <p class="eyebrow reveal">
+          <span class="live-dot" data-live>закрыто</span>
+          Комендантский пр., 66к1 · Коломяги
+        </p>
+        <h1 class="hero__title" aria-label="MEDUZA">
+          <span aria-hidden="true" class="hero__letters">
+            <span class="ch" style="--i:0">M</span><span class="ch" style="--i:1">E</span><span class="ch" style="--i:2">D</span><span class="ch" style="--i:3">U</span><span class="ch" style="--i:4">Z</span><span class="ch" style="--i:5">A</span>
+          </span>
+        </h1>
+        <p class="hero__lead reveal">Бар, в который заходят «на пиво» —<br />и остаются на вечер.</p>
+        <p class="hero__sub reveal">Корейская кухня. Свежий разлив. Настолки. Летник. Бармен, который расскажет про каждое блюдо так, что захочется всё.</p>
+        <div class="hero__cta reveal">
+          <a class="btn btn--glow" href="tel:+79990605044">Забронировать стол</a>
+          <a class="btn btn--ghost" href="#menu">Смотреть меню</a>
+        </div>
+        <div class="hero__meta">
+          <div>
+            <strong>4,8</strong>
+            <span>127 оценок · Яндекс Карты</span>
+          </div>
+          <div>
+            <strong>2026</strong>
+            <span>Хорошее место</span>
+          </div>
+          <div>
+            <strong>с 16:00</strong>
+            <span>до ночи, каждый день</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <figure class="hero__shot hero__shot--main">
+          <img src="assets/photos/photo-11.jpg" alt="Стол в Meduza: корейские закуски, панчаны и пиво" />
+        </figure>
+        <figure class="hero__shot hero__shot--door">
+          <img src="assets/photos/photo-01.jpg" alt="Ночной вход с вывеской MEDUZA" />
+        </figure>
+        <figure class="hero__shot hero__shot--pint">
+          <img src="assets/photos/photo-21.jpg" alt="Бокалы пива в зале" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__stage">
+        <div class="about__collage">
+          <figure class="about__shot about__shot--main reveal">
+            <img src="assets/photos/photo-09.jpg" alt="Бокалы на барной стойке, за окном вечерний город" />
+          </figure>
+          <figure class="about__shot about__shot--food reveal">
+            <img src="assets/photos/photo-26.jpg" alt="Крылья, картофель фри и пиво" />
+          </figure>
+          <figure class="about__shot about__shot--glass reveal">
+            <img src="assets/photos/photo-04.jpg" alt="Корейское блюдо, рис и панчаны" />
+          </figure>
+          <span class="about__badge">Корея × разлив</span>
+        </div>
+        <div class="about__copy">
+          <p class="eyebrow">о месте</p>
+          <h2>Не пивнуха. Соседский бар с характером.</h2>
+          <p class="lead">На конце Комендантского спрятался маленький бар. С улицы кажется обычной пивнухой — заходишь и меняешь мнение.</p>
+          <p>Приглушённый свет, диванчики, янтарь ламп. Бармен расскажет про блюдо так, что захочется всё. Настолки с полки, пибимпаб к пиву, летник, пока не стемнеет.</p>
+          <ul class="about__chips">
+            <li>настолки</li>
+            <li>летняя веранда</li>
+            <li>можно с собакой</li>
+            <li>пиво от 285 ₽</li>
+          </ul>
+        </div>
+      </div>
+
+      <blockquote class="about__quote">
+        <p>«Зашёл не в какую-нибудь пивнуху с местными мужиками, а в бар, где уютно и обслужат.»</p>
+        <cite>Константин · Яндекс Карты</cite>
+      </blockquote>
+
+      <ul class="stats">
+        <li>
+          <strong data-count="4.8" data-decimals="1">0,0</strong>
+          <span>рейтинг<br />на Яндекс Картах</span>
+        </li>
+        <li>
+          <strong data-count="127">0</strong>
+          <span>оценок<br />от живых гостей</span>
+        </li>
+        <li>
+          <strong>2026</strong>
+          <span>награда<br />«Хорошее место»</span>
+        </li>
+        <li>
+          <strong>16:00</strong>
+          <span>открываемся<br />каждый день</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="promo" id="promo">
+      <div class="promo__today" id="todayPromo">
+        <img src="assets/photos/photo-26.jpg" alt="Крылья, картофель фри и бокал пива в Meduza" />
+        <div class="promo__today-copy">
+          <p class="eyebrow">сегодня</p>
+          <h2 id="promoTitle">Акция дня</h2>
+          <p id="promoText">Загляните — всегда есть повод остаться ещё на один бокал.</p>
+          <a class="btn btn--glow" href="tel:+79990605044">Забронировать стол</a>
+        </div>
+      </div>
+      <div class="promo__week">
+        <article>
+          <span>пн–вт</span>
+          <h3>1+1 на пиво</h3>
+          <p>До 20:00 на все сорта. Два бокала — цена одного.</p>
+        </article>
+        <article>
+          <span>ср</span>
+          <h3>День компании</h3>
+          <p>От четырёх человек — −15% на весь чек.</p>
+        </article>
+        <article>
+          <span>чт</span>
+          <h3>Закуски</h3>
+          <p>На вторую горячую закуску — скидка 30%.</p>
+        </article>
+        <article>
+          <span>пт–сб</span>
+          <h3>До двух ночи</h3>
+          <p>Выходные. Настолки, корейская кухня и разлив без спешки.</p>
+        </article>
+        <article>
+          <span>вс</span>
+          <h3>Пиво + закуска</h3>
+          <p>Бокал 0,5 и гренки или фри — 450 ₽.</p>
+        </article>
+        <article class="promo__note">
+          <span>каждый день</span>
+          <h3>Самовывоз −20%</h3>
+          <p>До 20:00 с понедельника по четверг. Пиво на вынос — всегда.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="section-head">
+        <p class="eyebrow">меню</p>
+        <h2>Корейская кухня,<br />закуски к пиву, стрит-фуд.</h2>
+        <p class="section-head__note">Цены по Яндекс Еде. На месте ассортимент разлива и позиции могут чуть отличаться — бармен подскажет.</p>
+      </div>
+
+      <div class="menu__tabs" role="tablist">
+        <button class="is-active" role="tab" aria-selected="true" data-tab="korea">Корея</button>
+        <button role="tab" aria-selected="false" data-tab="hot">Горячие закуски</button>
+        <button role="tab" aria-selected="false" data-tab="street">Бургеры и пицца</button>
+        <button role="tab" aria-selected="false" data-tab="snacks">Снеки</button>
+      </div>
+
+      <div class="menu__panels">
+        <div class="menu__panel is-active" id="panel-korea" data-panel="korea">
+          <article class="dish">
+            <img src="assets/food/bibimbap-beef.jpg" alt="Пибимпаб с говядиной" />
+            <div>
+              <h3>Пибимпаб с говядиной</h3>
+              <p>Рис, пульгоги, шпинат, морковь, огурец, грибы, нори, кочудян. С панчанами.</p>
+              <span>860 ₽ · 400 г</span>
+            </div>
+          </article>
+          <article class="dish">
+            <img src="assets/food/bibimbap-chicken.jpg" alt="Пибимпаб с курицей" />
+            <div>
+              <h3>Пибимпаб с курицей</h3>
+              <p>Рис, куриное филе, овощи, яйцо и острый соус. Гости пишут: «как дома на Сахалине».</p>
+              <span>770 ₽ · 400 г</span>
+            </div>
+          </article>
+          <article class="dish">
+            <img src="assets/food/ramen.jpg" alt="Сырный рамен с курицей" />
+            <div>
+              <h3>Сырный рамен с курицей</h3>
+              <p>Сырный бульон, яичная лапша, курица в сладко-остром соусе, яйцо.</p>
+              <span>750 ₽ · 700 мл</span>
+            </div>
+          </article>
+          <article class="dish">
+            <img src="assets/food/ramen.jpg" alt="Рамен с говядиной" />
+            <div>
+              <h3>Рамен с говядиной</h3>
+              <p>Насыщенный бульон, лапша, говядина, яйцо, грибы. Часто берут повторно.</p>
+              <span>860 ₽ · 700 мл</span>
+            </div>
+          </article>
+          <article class="dish">
+            <img src="assets/food/gogi.jpg" alt="Гоги поккым" />
+            <div>
+              <h3>Гоги поккым</h3>
+              <p>Свинина с луком и морковью, соевый соус и кочудян. Подаётся с панчанами.</p>
+              <span>760 ₽ · 550 г</span>
+            </div>
+          </article>
+          <article class="dish">
+            <img src="assets/food/kimchi-pokkym.jpg" alt="Кимчи поккым" />
+            <div>
+              <h3>Кимчи поккым</h3>
+              <p>Кимчи, свинина, лук и рис. Острое, домашнее, очень «то самое».</p>
+              <span>780 ₽ · 500 г</span>
+            </div>
+          </article>
+          <article class="dish">
+            <img src="assets/food/rice-tuna.jpg" alt="Рисовые шарики с тунцом" />
+            <div>
+              <h3>Рисовые шарики с тунцом</h3>
+              <p>Рис, тунец, кочудян и тягучая моцарелла. Хит отзывов.</p>
+              <span>600 ₽ · 220 г</span>
+            </div>
+          </article>
+          <article class="dish">
+            <img src="assets/food/kimchi.jpg" alt="Кимчи" />
+            <div>
+              <h3>Кимчи</h3>
+              <p>Пекинская капуста, чеснок, перец, янним. «Кимчи вообще супер».</p>
+              <span>220 ₽ · 100 г</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu__panel" id="panel-hot" data-panel="hot" hidden>
+          <article class="dish">
+            <img src="assets/food/croutons.jpg" alt="Фирменные чесночные гренки с сыром" />
+            <div>
+              <h3>Фирменные гренки с сыром</h3>
+              <p>Ржаной хлеб, чеснок, тающий сыр. К пиву — обязательно.</p>
+              <span>489 ₽ · 160 г</span>
+            </div>
+          </article>
+          <article class="dish">
+            <img src="assets/food/fries.jpg" alt="Картофель фри" />
+            <div>
+              <h3>Картофель фри с соусом</h3>
+              <p>Золотистые ломтики и соус на выбор. В воскресенье — в сете за 450 ₽.</p>
+              <span>379 ₽ · 150 г</span>
+            </div>
+          </article>
+          <article class="dish">
+            <img src="assets/food/squid.jpg" alt="Кольца кальмара фри" />
+            <div>
+              <h3>Кольца кальмара фри</h3>
+              <p>Хрустящая панировка, нежный кальмар.</p>
+              <span>512 ₽ · 100 г</span>
+            </div>
+          </article>
+          <article class="dish">
+            <img src="assets/food/onion.jpg" alt="Луковые кольца" />
+            <div>
+              <h3>Луковые кольца фри</h3>
+              <p>Сочный лук в золотистой корочке.</p>
+              <span>474 ₽ · 100 г</span>
+            </div>
+          </article>
+          <article class="dish">
+            <img src="assets/food/nuggets.jpg" alt="Наггетсы" />
+            <div>
+              <h3>Наггетсы хрустящие</h3>
+              <p>Сочная курица в панировке. С сырным, BBQ или кетчупом.</p>
+              <span>449 ₽ · 140 г</span>
+            </div>
+          </article>
+          <article class="dish">
+            <img src="assets/food/rice-salami.jpg" alt="Рисовые шарики с салями" />
+            <div>
+              <h3>Рисовые шарики с салями</h3>
+              <p>Моцарелла внутри, хрустящая корочка снаружи.</p>
+              <span>470 ₽ · 220 г</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu__panel" id="panel-street" data-panel="street" hidden>
+          <article class="dish dish--text">
+            <div>
+              <h3>Гамбургер «Тайга» с беконом</h3>
+              <p>Котлета, бекон, соус. Гости сравнивают с крафтовым рестораном, а не с фастфудом.</p>
+              <span>755 ₽ · 370 г</span>
+            </div>
+          </article>
+          <article class="dish dish--text">
+            <div>
+              <h3>Чизбургер</h3>
+              <p>Классика к пиву. 360 граммов сытности.</p>
+              <span>674 ₽ · 360 г</span>
+            </div>
+          </article>
+          <article class="dish dish--text">
+            <div>
+              <h3>Куриный бургер</h3>
+              <p>Сочная курица, мягкая булочка.</p>
+              <span>649 ₽ · 360 г</span>
+            </div>
+          </article>
+          <article class="dish dish--text">
+            <div>
+              <h3>Сырный бургер</h3>
+              <p>Без мяса. Для тех, кто за сыром, а не за котлетой.</p>
+              <span>715 ₽ · 370 г</span>
+            </div>
+          </article>
+          <article class="dish dish--text">
+            <div>
+              <h3>Римская пепперони</h3>
+              <p>Толстый борт, пикантная колбаса.</p>
+              <span>749 ₽ · 450 г</span>
+            </div>
+          </article>
+          <article class="dish dish--text">
+            <div>
+              <h3>Римская мясная</h3>
+              <p>Для большой компании и ещё одного бокала.</p>
+              <span>919 ₽ · 590 г</span>
+            </div>
+          </article>
+          <article class="dish dish--text">
+            <div>
+              <h3>Маргарита с прованскими травами</h3>
+              <p>Томат, моцарелла, базилик.</p>
+              <span>619 ₽ · 550 г</span>
+            </div>
+          </article>
+          <article class="dish dish--text">
+            <div>
+              <h3>Хот-дог датский</h3>
+              <p>Классика стрит-фуда, 190 г.</p>
+              <span>479 ₽ · 190 г</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu__panel" id="panel-snacks" data-panel="snacks" hidden>
+          <article class="dish">
+            <img src="assets/food/pistachios.jpg" alt="Фисташки" />
+            <div>
+              <h3>Фисташки с солью</h3>
+              <p>Иногда бармен ставит орехи просто так — «чтобы разогнать аппетит».</p>
+              <span>269 ₽ · 50 г</span>
+            </div>
+          </article>
+          <article class="dish">
+            <img src="assets/food/peanuts.jpg" alt="Арахис" />
+            <div>
+              <h3>Арахис микс</h3>
+              <p>К разливной Балтике и разговору ни о чём.</p>
+              <span>289 ₽ · 100 г</span>
+            </div>
+          </article>
+          <article class="dish dish--text">
+            <div>
+              <h3>Кальмар вяленый</h3>
+              <p>Стружка. Классика к пенному.</p>
+              <span>179 ₽ · 50 г</span>
+            </div>
+          </article>
+          <article class="dish dish--text">
+            <div>
+              <h3>Минтай соломка</h3>
+              <p>Сушено-вяленая, солёная, правильная.</p>
+              <span>199 ₽ · 50 г</span>
+            </div>
+          </article>
+          <article class="dish dish--text">
+            <div>
+              <h3>Пиво на розлив</h3>
+              <p>Светлое, тёмное, Жигулёвское — «промахнуться невозможно». Бокал 285–595 ₽.</p>
+              <span>от 285 ₽</span>
+            </div>
+          </article>
+          <article class="dish dish--text">
+            <div>
+              <h3>Сидр и медовуха</h3>
+              <p>Гранатовый сидр, вишня, чёрная смородина. Медовуха — «с запахом мёда».</p>
+              <span>спросите у бармена</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <aside class="pick" id="pick">
+        <div class="pick__copy">
+          <p class="eyebrow">не знаете что взять</p>
+          <h2>Сегодня в стакане и на тарелке.</h2>
+          <p class="pick__note" id="pickNote">классика, с которой начинают вечер</p>
+        </div>
+        <div class="pick__stage">
+          <article class="pick__card">
+            <span>разлив</span>
+            <strong id="pickBeer">светлый 0,5</strong>
+          </article>
+          <span class="pick__plus" aria-hidden="true">+</span>
+          <article class="pick__card">
+            <span>к нему</span>
+            <strong id="pickFood">Пибимпаб с говядиной</strong>
+          </article>
+        </div>
+        <button class="btn btn--ghost btn--sm" type="button" id="pickShuffle">Ещё вариант</button>
+      </aside>
+    </section>
+
+    <section class="rituals">
+      <div class="section-head">
+        <p class="eyebrow">зачем идти</p>
+        <h2>Вечер здесь складывается сам.</h2>
+      </div>
+      <div class="rituals__grid">
+        <article>
+          <span>01</span>
+          <h3>Настолки на полке</h3>
+          <p>Гости пишут: «огромное количество настолок». Приходите компанией, бармен подскажет, во что сыграть к пиву.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Летняя веранда</h3>
+          <p>«Летник вообще огонь, особенно в жару». Улица, бокал, разговор — без суеты большого города.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Можно с собакой</h3>
+          <p>Собаки до 35 см — свои. Wi-Fi, зарядка, можно с ноутбуком, если нужно досидеть работу и только потом расслабиться.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Пиво с собой</h3>
+          <p>Ежедневно — разлив на вынос. Допить дома, унести на встречу, продлить вечер после закрытия зала.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="section-head">
+        <p class="eyebrow">атмосфера</p>
+        <h2>Как это выглядит, когда ты уже внутри.</h2>
+      </div>
+      <div class="gallery__rail" id="galleryRail">
+        <button class="gallery__item" data-full="assets/photos/photo-01.jpg">
+          <img src="assets/photos/photo-01.jpg" alt="Вход в Meduza ночью, неоновая вывеска" />
+        </button>
+        <button class="gallery__item" data-full="assets/photos/photo-09.jpg">
+          <img src="assets/photos/photo-09.jpg" alt="Бокалы и гирлянды у окна" />
+        </button>
+        <button class="gallery__item" data-full="assets/photos/photo-04.jpg">
+          <img src="assets/photos/photo-04.jpg" alt="Корейский ужин с пивом" />
+        </button>
+        <button class="gallery__item" data-full="assets/photos/photo-11.jpg">
+          <img src="assets/photos/photo-11.jpg" alt="Стол с закусками, панчанами и пивом" />
+        </button>
+        <button class="gallery__item" data-full="assets/photos/photo-16.jpg">
+          <img src="assets/photos/photo-16.jpg" alt="Вывеска и штендер с корейской кухней" />
+        </button>
+        <button class="gallery__item" data-full="assets/photos/photo-21.jpg">
+          <img src="assets/photos/photo-21.jpg" alt="Бокалы пива на столе" />
+        </button>
+        <button class="gallery__item" data-full="assets/photos/photo-25.jpg">
+          <img src="assets/photos/photo-25.jpg" alt="Настольная игра, сидр и хот-дог" />
+        </button>
+        <button class="gallery__item" data-full="assets/photos/photo-26.jpg">
+          <img src="assets/photos/photo-26.jpg" alt="Крылья, картофель фри и пиво" />
+        </button>
+        <button class="gallery__item" data-full="assets/photos/photo-18.jpg">
+          <img src="assets/photos/photo-18.jpg" alt="Тёмный эль, орехи и меню корейской кухни" />
+        </button>
+        <button class="gallery__item" data-full="assets/food/croutons.jpg">
+          <img src="assets/food/croutons.jpg" alt="Фирменные чесночные гренки" />
+        </button>
+        <button class="gallery__item" data-full="assets/food/ramen.jpg">
+          <img src="assets/food/ramen.jpg" alt="Сырный рамен" />
+        </button>
+        <button class="gallery__item" data-full="assets/photos/photo-29.jpg">
+          <img src="assets/photos/photo-29.jpg" alt="Вечер в Meduza" />
+        </button>
+      </div>
+      <p class="gallery__hint">Тяни пальцем или мышью · нажми, чтобы открыть</p>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="section-head">
+        <p class="eyebrow">гости говорят</p>
+        <h2>92 отзыва. 4,8. И это не случайность.</h2>
+      </div>
+      <div class="reviews__grid">
+        <article class="review">
+          <p>«Невероятное настроение с первых минут. Бармен — потрясающий продажник и интересный собеседник. Всё оооочень вкусно. Огромное количество настолок, очень уютно — и сразу хочется вернуться.»</p>
+          <footer>
+            <strong>Chupa</strong>
+            <span>Пибимпаб, шарики с тунцом, гренки, кальмары</span>
+          </footer>
+        </article>
+        <article class="review">
+          <p>«Раньше, проходя мимо, думал что обычная пивнуха — раз зайдя изменил мнение. Ребята отлично выбрали сорта пива, промахнуться невозможно. Бургеры крафтовые, как из приличного рестика.»</p>
+          <footer>
+            <strong>Константин Обычный</strong>
+            <span>после работы, стабильно</span>
+          </footer>
+        </article>
+        <article class="review">
+          <p>«Очень вайбовое и уютное заведение, куда хочется возвращаться. Большой выбор пива, отличное корейское меню. Сотрудники — невероятно приятные. Место для вечера с друзьями.»</p>
+          <footer>
+            <strong>Алина</strong>
+            <span>май 2026</span>
+          </footer>
+        </article>
+        <article class="review">
+          <p>«Уютный небольшой бар, удобные диванчики, общительный бармен. Цены радуют. Есть и орешки с гренками, и нормальная еда корейской кухни. Разливное Жигулёвское великолепно.»</p>
+          <footer>
+            <strong>Дмитрий Кокин</strong>
+            <span>знаток города 30 уровня</span>
+          </footer>
+        </article>
+        <article class="review">
+          <p>«Прекрасное место, вкусное пиво и корейская кухня, как дома на Сахалине. Рекомендую.»</p>
+          <footer>
+            <strong>елена ж.</strong>
+            <span>май 2026</span>
+          </footer>
+        </article>
+        <article class="review">
+          <p>«Одно из лучших мест: с друзьями, с половинкой, семьёй или одному с бокалом. Свежая еда, свежее пиво, спокойная атмосфера. Минусов нет.»</p>
+          <footer>
+            <strong>А.М.А</strong>
+            <span>ходит не первый день</span>
+          </footer>
+        </article>
+      </div>
+      <p class="reviews__more">
+        Все отзывы —
+        <a href="https://yandex.ru/maps/org/meduza/169865859617/reviews/" target="_blank" rel="noopener">на Яндекс Картах</a>
+      </p>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="visit__info">
+        <p class="eyebrow">как дойти</p>
+        <h2>Комендантский, 66к1.<br />Остановка «Арцеуловская аллея» — 250 метров.</h2>
+        <ul class="visit__facts">
+          <li>
+            <span>Адрес</span>
+            <strong>
+              <button type="button" class="copy" data-copy="Санкт-Петербург, Комендантский просп., 66, корп. 1" id="copyAddress">
+                Санкт-Петербург, Комендантский просп., 66, корп. 1
+                <em>скопировать</em>
+              </button>
+            </strong>
+          </li>
+          <li>
+            <span>Телефон · бронь</span>
+            <strong><a href="tel:+79990605044">+7 999 060-50-44</a></strong>
+          </li>
+          <li>
+            <span>График</span>
+            <strong id="hoursList">
+              Пн–чт 16:00–00:00<br />
+              Пт–сб 16:00–02:00<br />
+              Вс 16:00–01:00
+            </strong>
+          </li>
+          <li>
+            <span>Сейчас</span>
+            <strong>
+              <span class="live-dot" data-live>закрыто</span>
+              <span class="visit__clock" id="clockVisit">—</span>
+            </strong>
+          </li>
+        </ul>
+        <div class="visit__cta">
+          <a class="btn btn--glow" href="tel:+79990605044">Позвонить</a>
+          <a class="btn btn--ghost" href="https://t.me/meduzza_bar" target="_blank" rel="noopener">Telegram</a>
+          <a class="btn btn--ghost" href="https://vk.ru/meduzaaa66k1" target="_blank" rel="noopener">ВКонтакте</a>
+        </div>
+        <p class="visit__fine">Карта, наличные, СБП. Wi-Fi. Можно с собакой. Вход доступен на коляске. Доставка — Яндекс Еда.</p>
+      </div>
+      <div class="visit__map">
+        <iframe
+          title="Meduza на Яндекс Картах"
+          src="https://yandex.ru/map-widget/v1/?ll=30.219740%2C60.040438&z=16&ol=biz&oid=169865859617"
+          loading="lazy"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <img src="assets/logo/logo.jpg" alt="" />
+      <div>
+        <strong>MEDUZA</strong>
+        <span>бар · паб · корейская кухня</span>
+      </div>
+    </div>
+    <div class="footer__info">
+      <p>Комендантский просп., 66к1, Санкт-Петербург · +7 999 060-50-44</p>
+      <p class="footer__legal">Информация и фото с <a href="https://yandex.ru/maps/org/meduza/169865859617/" target="_blank" rel="noopener">Яндекс Карт</a>. Меню — Яндекс Еда, может отличаться. 18+</p>
+    </div>
+    <a class="footer__made" href="https://github.com/ilyalycha23" target="_blank" rel="noopener">
+      <span>Made by</span>
+      <strong>ilyalycha</strong>
+    </a>
+  </footer>
+
+  <a class="fab" id="fab" href="tel:+79990605044">стол</a>
+  <div class="toast" id="toast" role="status"></div>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">закрыть</button>
+    <img id="lightboxImg" alt="" />
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Назад">‹</button>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Вперёд">›</button>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
