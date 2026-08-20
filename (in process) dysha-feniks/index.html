@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Душа Феникса — кофейня на Комендантском</title>
+  <meta name="description" content="Кофейня «Душа Феникса» на Комендантском проспекте, 71. Авторский кофе, настоящий мотоцикл на стене и печенька с предсказанием к каждому заказу. Зашёл случайно — остался навсегда." />
+  <meta name="theme-color" content="#07080a" />
+  <meta property="og:title" content="Душа Феникса — кофейня с мотоциклом и душой" />
+  <meta property="og:description" content="Авторский кофе, байкерский вайб и печеньки с предсказаниями. Комендантский проспект, 71. Рейтинг 5.0." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Marck+Script&family=Unbounded:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preload" as="image" href="img/m/hero-main.jpg" media="(max-width: 980px)" />
+  <link rel="preload" as="image" href="img/hero-main.jpg" media="(min-width: 981px)" />
+  <link rel="preload" href="audio/ninja-idle.wav" as="audio" media="(min-width: 981px)" />
+  <link rel="preload" href="audio/ninja-scream.wav" as="audio" media="(min-width: 981px)" />
+  <!-- Kawasaki Ninja ZX-6R: Sclolex + Hurry_Joe33 / Freesound, CC0 -->
+</head>
+<body>
+  <div class="cursor" id="cursor" hidden></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="loader" id="loader">
+    <div class="loader__mark">
+      <span class="loader__script">Душа Феникса</span>
+      <div class="tacho">
+        <div class="tacho__fill" id="tachoFill"></div>
+      </div>
+      <p class="loader__hint">разогреваем мотор</p>
+    </div>
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#top">
+      <span class="nav__logo-script">Душа Феникса</span>
+      <span class="nav__logo-sub">кофейня</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#place">Место</a>
+      <a href="#menu">Меню</a>
+      <a href="#cookie">Печенька</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#visit">Как добраться</a>
+    </nav>
+    <div class="nav__end">
+      <a class="status" id="openStatus" href="#visit">
+        <i></i><span>открыто до 22:00</span>
+      </a>
+      <a class="btn btn--tiny" href="tel:+79107458688">Позвонить</a>
+      <a class="nav__menu" href="#menu">Меню</a>
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__media">
+        <picture>
+          <source media="(max-width: 980px)" srcset="img/m/hero-main.jpg" />
+          <img src="img/hero-main.jpg" alt="Чёрный спортбайк в кофейне Душа Феникса" fetchpriority="high" decoding="async" />
+        </picture>
+        <div class="hero__shade"></div>
+      </div>
+      <div class="hero__content">
+        <p class="kicker">
+          <span>Комендантский, 71</span>
+          <span>Санкт-Петербург</span>
+          <span>5.0 · Хорошее место 2026</span>
+        </p>
+        <h1>
+          <span class="hero__script">кофейня</span>
+          <span class="hero__title">Душа</span>
+          <span class="hero__title hero__title--gold">Феникса</span>
+        </h1>
+        <p class="hero__lead">Зашёл случайно — остался навсегда.</p>
+        <p class="hero__text">
+          Авторский кофе, настоящий мотоцикл на стене
+          и печенька с предсказанием к каждому заказу.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--cyan" href="#cookie">Сломать печеньку</a>
+          <a class="btn btn--ghost" href="#menu">Смотреть меню</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="place" id="place">
+      <div class="place__top">
+        <div class="place__intro reveal">
+          <p class="eyebrow">01 — место</p>
+          <h2><span>Не сетевая точка.</span><span>Своё пространство.</span></h2>
+          <p>
+            На Комендантском есть кофейни. А есть «Душа Феникса» —
+            маленькая, тёплая, с чёрным спортбайком на стене,
+            гирляндами и людьми, которым правда не всё равно,
+            что у тебя в стакане.
+          </p>
+          <blockquote class="place__quote">
+            «Зашёл случайно — остался навсегда.»
+          </blockquote>
+          <div class="stats">
+            <article>
+              <b>5.0</b>
+              <span>рейтинг Яндекса</span>
+            </article>
+            <article>
+              <b>97</b>
+              <span>живых отзывов</span>
+            </article>
+            <article>
+              <b>200–400 ₽</b>
+              <span>средний чек</span>
+            </article>
+            <article>
+              <b>2026</b>
+              <span>Хорошее место</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="place__collage reveal">
+          <figure class="place__collage-main">
+            <picture>
+              <source media="(max-width: 980px)" srcset="img/m/photo-02.jpg" />
+              <img src="img/photo-02.jpg" alt="Матовый чёрный мотоцикл на стене" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Тот самый мотик. Не постер — настоящий.</figcaption>
+          </figure>
+          <figure class="place__collage-card">
+            <picture>
+              <source media="(max-width: 980px)" srcset="img/m/photo-01.jpg" />
+              <img src="img/photo-01.jpg" alt="Закат в окне кофейни" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+          <figure class="place__collage-mini">
+            <picture>
+              <source media="(max-width: 980px)" srcset="img/m/drink-matcha.jpg" />
+              <img src="img/drink-matcha.jpg" alt="Матча и мотошлемы" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+          <div class="place__stamp">
+            <strong>5.0</strong>
+            <span>Яндекс</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="place__split reveal">
+        <figure class="place__shot">
+          <picture>
+            <source media="(max-width: 980px)" srcset="img/m/photo-11-plus.jpg" />
+            <img src="img/photo-11-plus.jpg" alt="Барная стойка и мотоцикл в кофейне" loading="lazy" decoding="async" />
+          </picture>
+          <figcaption>Бар, за которым варят настроение.</figcaption>
+        </figure>
+        <div class="place__copy">
+          <p class="eyebrow">байкерский вайб без понтов</p>
+          <h3>Кофейня, в которую заезжают за <em>настроением</em>.</h3>
+          <p class="place__lead">Тёмные стены. Тёплый свет. Неон на стойке.</p>
+          <p class="place__punch">Мотоцикл гости снимают чаще, чем себя.</p>
+          <ul class="traits">
+            <li><b>С собакой</b><span>даже таксы в теме</span></li>
+            <li><b>Натуральное</b><span>не химия из бутылки</span></li>
+            <li><b>Лина и Ксения</b><span>помнят тебя</span></li>
+            <li><b>Печенька</b><span>к каждому кофе</span></li>
+          </ul>
+          <div class="place__aside">
+            <picture>
+              <source media="(max-width: 980px)" srcset="img/m/photo-20.jpg" />
+              <img src="img/photo-20.jpg" alt="Печенька с предсказанием" loading="lazy" decoding="async" />
+            </picture>
+            <div>
+              <p>К каждому кофе — печенька.</p>
+              <q>Вокруг тебя будет много радости, улыбок и звонкого заливистого смеха.</q>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="moto" id="moto">
+      <div class="moto__head reveal">
+        <p class="eyebrow">02 — характер</p>
+        <h2>Крутани ручку.</h2>
+      </div>
+      <div class="moto__stage">
+        <div class="moto__bike">
+          <div class="moto__frame">
+            <picture>
+              <source media="(max-width: 980px)" srcset="img/m/moto-face.jpg" />
+              <img id="motoImg" src="img/moto-face.jpg" alt="Спортбайк из кофейни — анфас, правая ручка газа в интерфейсе" loading="lazy" decoding="async" />
+            </picture>
+            <div class="moto__glow" id="motoGlow"></div>
+          </div>
+          <button class="grip" id="throttle" type="button" aria-label="Зажать и крутить ручку газа">
+            <picture>
+              <source media="(max-width: 980px)" type="image/webp" srcset="img/m/throttle-grip.webp" />
+              <img class="grip__img" id="gripRubber" src="img/throttle-grip.png" alt="" />
+            </picture>
+            <span class="grip__label">зажать и крутить</span>
+          </button>
+        </div>
+      </div>
+      <div class="moto__copy reveal">
+        <p class="moto__lead">
+          Настоящий мотоцикл в кофейне — не декорация «для инсты».
+          Это про скорость, тепло и людей, которые умеют останавливаться.
+        </p>
+        <p class="moto__note">На телефоне тоже работает. Соседей предупреди.</p>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="menu__head reveal">
+        <p class="eyebrow">03 — меню</p>
+        <h2>Не сиропы вслепую.<br />Авторские сочетания.</h2>
+        <p>
+          Классика сварена как надо. Авторка — то, за чем возвращаются:
+          сырный латте с настоящим сыром, арахисовый раф, матча-персик,
+          «Шишкин лес» и бабл-ти, который не стыдно заказать днём.
+        </p>
+      </div>
+
+      <div class="hits reveal">
+        <article class="hit">
+          <picture>
+            <source media="(max-width: 980px)" srcset="img/m/photo-18.jpg" />
+            <img src="img/photo-18.jpg" alt="Авторский напиток" loading="lazy" decoding="async" />
+          </picture>
+          <div>
+            <p>хит гостей</p>
+            <h3>Сырный латте</h3>
+            <span>плавленый сыр · ваниль · 350 мл</span>
+            <b>360 ₽</b>
+          </div>
+        </article>
+        <article class="hit">
+          <picture>
+            <source media="(max-width: 980px)" srcset="img/m/drink-matcha.jpg" />
+            <img src="img/drink-matcha.jpg" alt="Матча персик" loading="lazy" decoding="async" />
+          </picture>
+          <div>
+            <p>авторская матча</p>
+            <h3>Матча персик</h3>
+            <span>персик · кокос · 500 мл</span>
+            <b>420 ₽</b>
+          </div>
+        </article>
+        <article class="hit">
+          <picture>
+            <source media="(max-width: 980px)" srcset="img/m/photo-26.jpg" />
+            <img src="img/photo-26.jpg" alt="Холодная матча" loading="lazy" decoding="async" />
+          </picture>
+          <div>
+            <p>холодный кайф</p>
+            <h3>Тропик матча бамбл</h3>
+            <span>цитрус · травы · 550 мл</span>
+            <b>420 ₽</b>
+          </div>
+        </article>
+        <article class="hit">
+          <picture>
+            <source media="(max-width: 980px)" srcset="img/m/photo-24.jpg" />
+            <img src="img/photo-24.jpg" alt="Два стакана кофе на фоне мотоцикла" loading="lazy" decoding="async" />
+          </picture>
+          <div>
+            <p>ореховая легенда</p>
+            <h3>Арахисовый раф</h3>
+            <span>арахисовая паста · 350 мл</span>
+            <b>370 ₽</b>
+          </div>
+        </article>
+      </div>
+
+      <div class="menu-split">
+      <div class="menu-split__list">
+      <div class="tabs" role="tablist">
+        <button class="tab is-on" data-tab="author">Авторский кофе</button>
+        <button class="tab" data-tab="classic">Классика</button>
+        <button class="tab" data-tab="matcha">Матча</button>
+        <button class="tab" data-tab="cold">Холодное</button>
+        <button class="tab" data-tab="tea">Чай и не кофе</button>
+      </div>
+
+      <div class="menu-panels">
+        <div class="panel is-on" data-panel="author">
+          <ul class="board">
+            <li><div><h4>Сырный латте</h4><p>Плавленый сыр и ваниль. Нежный, сливочный, ни на что не похож.</p></div><em>350 мл</em><b>360 ₽</b></li>
+            <li><div><h4>Фисташковый раф</h4><p>Фисташковая паста, бархатная пена, десерт в чашке.</p></div><em>350 мл</em><b>370 ₽</b></li>
+            <li><div><h4>Арахисовый раф</h4><p>Густая карамельно-ореховая паста. Любовь района.</p></div><em>350 мл</em><b>370 ₽</b></li>
+            <li><div><h4>Банановый брауни</h4><p>Эспрессо, банан и лёгкая горчинка какао.</p></div><em>350 мл</em><b>370 ₽</b></li>
+            <li><div><h4>Ромовый раф</h4><p>Шоколад, клён и тёплый ромовый шлейф. Как ромовая баба, только пьётся.</p></div><em>350 мл</em><b>370 ₽</b></li>
+            <li><div><h4>Сезонное</h4><p>«Шишкин лес», мандариновый капучино, халва, нутелла — спрашивайте у барной.</p></div><em>по сезону</em><b>от 350 ₽</b></li>
+          </ul>
+        </div>
+        <div class="panel" data-panel="classic">
+          <ul class="board">
+            <li><div><h4>Эспрессо</h4><p>Короткий, чистый, без лишней горечи.</p></div><em>30 мл</em><b>150 ₽</b></li>
+            <li><div><h4>Американо</h4><p>Для тех, кто знает, зачем пришёл.</p></div><em>350 мл</em><b>210 ₽</b></li>
+            <li><div><h4>Капучино</h4><p>180–250 ₽ в городе. Здесь — как надо.</p></div><em>350 мл</em><b>250 ₽</b></li>
+            <li><div><h4>Латте</h4><p>Мягкий, молочный, на каждый день.</p></div><em>350 мл</em><b>250 ₽</b></li>
+            <li><div><h4>Флэт / Раф / Гляссе</h4><p>Три характера. Один уровень варки.</p></div><em>350 мл</em><b>280 ₽</b></li>
+            <li><div><h4>Бамбл</h4><p>Сок, эспрессо и сироп — взрыв свежести.</p></div><em>—</em><b>360 ₽</b></li>
+          </ul>
+        </div>
+        <div class="panel" data-panel="matcha">
+          <ul class="board">
+            <li><div><h4>Матча латте</h4><p>Церемониальная матча на карамельном молоке.</p></div><em>350 мл</em><b>350 ₽</b></li>
+            <li><div><h4>Тропик матча бамбл</h4><p>Тропики, цитрус, травы. Чтобы освежиться и взбодриться.</p></div><em>550 мл</em><b>420 ₽</b></li>
+            <li><div><h4>Матча персик</h4><p>Персиковое пюре и кокосовое молоко.</p></div><em>500 мл</em><b>420 ₽</b></li>
+            <li><div><h4>Матча груша-мёд</h4><p>Груша, корица, мёд, миндальное молоко. Ритуал уюта.</p></div><em>500 мл</em><b>420 ₽</b></li>
+          </ul>
+        </div>
+        <div class="panel" data-panel="cold">
+          <ul class="board">
+            <li><div><h4>Айс-латте</h4><p>Холодный классик на жаркий Комендантский.</p></div><em>450 мл</em><b>320 ₽</b></li>
+            <li><div><h4>Тропический эспрессо-тоник</h4><p>Ананас, тоник, эспрессо. Скандинавия уехала в отпуск.</p></div><em>450 мл</em><b>320 ₽</b></li>
+            <li><div><h4>Фраппе арахис-крекер</h4><p>Орех, сладость, кофейная горчинка.</p></div><em>450 мл</em><b>380 ₽</b></li>
+            <li><div><h4>Фраппе солёная карамель</h4><p>Холодный десерт с характером.</p></div><em>450 мл</em><b>380 ₽</b></li>
+            <li><div><h4>Бабл-ти вишнёвый</h4><p>Вишня, клубника, малина и джус-боллы.</p></div><em>500 мл</em><b>420 ₽</b></li>
+            <li><div><h4>После дождя</h4><p>Чёрный чай, лаванда, апельсин.</p></div><em>500 мл</em><b>430 ₽</b></li>
+            <li><div><h4>Бабл-ти банановый / цитрусовый</h4><p>Зелёный чай и сок. Летний режим.</p></div><em>500 мл</em><b>440 ₽</b></li>
+          </ul>
+        </div>
+        <div class="panel" data-panel="tea">
+          <ul class="board">
+            <li><div><h4>Облепиха-апельсин</h4><p>Терпкий чёрный чай, кислинка и цитрус.</p></div><em>300 мл</em><b>240 ₽</b></li>
+            <li><div><h4>Брусника-корица-гвоздика</h4><p>Согревает лучше шарфа.</p></div><em>300 мл</em><b>240 ₽</b></li>
+            <li><div><h4>Тот самый чай</h4><p>Мёд, малина, смородина, мята. Да, тот самый.</p></div><em>450 мл</em><b>260 ₽</b></li>
+            <li><div><h4>Лимонады</h4><p>Черника-мята · Пина Колада · Роза-грейпфрут</p></div><em>500 мл</em><b>330 ₽</b></li>
+            <li><div><h4>Горячий шоколад / какао</h4><p>Когда кофе уже был, а уюта ещё хочется.</p></div><em>350 мл</em><b>250–290 ₽</b></li>
+            <li><div><h4>Молочный коктейль</h4><p>Гости называют его произведением искусства. Мы не спорим.</p></div><em>450 мл</em><b>330 ₽</b></li>
+          </ul>
+        </div>
+      </div>
+      <p class="menu__footnote">Цены с Яндекс Карт, обновление 9 июля. Сезонные позиции лучше спросить у барной — они меняются быстрее сайта.</p>
+      </div>
+
+      <aside class="cookie-sec" id="cookie">
+        <div class="cookie-sec__copy reveal">
+          <p class="eyebrow">04 — ритуал</p>
+          <h2>Сломай печеньку.</h2>
+          <p>
+            К кофе здесь кладут печенье с предсказанием.
+            Гости пишут про это чаще, чем про интерьер.
+            На сайте можно сломать одну прямо сейчас.
+          </p>
+        </div>
+
+        <div class="cookie-stage">
+          <p class="cookie-hint" id="cookieHint">нажми на печеньку</p>
+          <div class="cookie-break">
+            <button class="fortune-cookie" id="fortuneCookie" type="button" aria-label="Сломать печеньку с предсказанием">
+              <span class="cookie-wing cookie-wing--l"><picture><source media="(max-width: 980px)" type="image/webp" srcset="img/m/fortune-cookie.webp" /><img src="img/fortune-cookie.png" alt="" /></picture></span>
+              <span class="cookie-wing cookie-wing--r"><picture><source media="(max-width: 980px)" type="image/webp" srcset="img/m/fortune-cookie.webp" /><img src="img/fortune-cookie.png" alt="" /></picture></span>
+            </button>
+            <div class="slip" id="slip" aria-live="polite">
+              <p id="slipText"></p>
+            </div>
+          </div>
+          <button class="btn btn--ghost" id="anotherCookie" type="button" hidden>ещё одну</button>
+        </div>
+      </aside>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="wall">
+        <div class="gallery__head reveal">
+          <p class="eyebrow">05 — живые кадры</p>
+          <h2>
+            <span>Не стоковая эстетика.</span>
+            <span>Реальные утренние</span>
+            <span>и вечерние.</span>
+          </h2>
+        </div>
+        <button class="shot shot--wall tile" data-full="img/photo-19.jpg">
+          <picture>
+            <source media="(max-width: 980px)" srcset="img/m/photo-19.jpg" />
+            <img src="img/photo-19.jpg" alt="Мотоцикл и неоновая подсветка" loading="lazy" decoding="async" />
+          </picture>
+        </button>
+        <button class="shot shot--float shot--cookie tile" data-full="img/photo-20.jpg" style="--r:-7deg">
+          <picture>
+            <source media="(max-width: 980px)" srcset="img/m/photo-20.jpg" />
+            <img src="img/photo-20.jpg" alt="Сломанная печенька с предсказанием" loading="lazy" decoding="async" />
+          </picture>
+        </button>
+        <button class="shot shot--float shot--cups tile" data-full="img/photo-24.jpg" style="--r:5deg">
+          <picture>
+            <source media="(max-width: 980px)" srcset="img/m/photo-24.jpg" />
+            <img src="img/photo-24.jpg" alt="Стаканы на фоне мотоцикла" loading="lazy" decoding="async" />
+          </picture>
+        </button>
+        <button class="shot shot--float shot--matcha tile" data-full="img/photo-26.jpg" style="--r:-4deg">
+          <picture>
+            <source media="(max-width: 980px)" srcset="img/m/photo-26.jpg" />
+            <img src="img/photo-26.jpg" alt="Матча на фоне сирени" loading="lazy" decoding="async" />
+          </picture>
+        </button>
+        <button class="shot shot--float shot--motto tile" data-full="img/photo-18.jpg" style="--r:6deg">
+          <picture>
+            <source media="(max-width: 980px)" srcset="img/m/photo-18.jpg" />
+            <img src="img/photo-18.jpg" alt="Стакан с девизом кофейни и печенька" loading="lazy" decoding="async" />
+          </picture>
+        </button>
+      </div>
+      <div class="film">
+        <button class="tile film__shot film__shot--wide" data-full="img/photo-21.jpg">
+          <picture>
+            <source media="(max-width: 980px)" srcset="img/m/photo-21.jpg" />
+            <img src="img/photo-21.jpg" alt="Зал, мотоцикл и гости у окна" loading="lazy" decoding="async" />
+          </picture>
+        </button>
+        <button class="tile film__shot" data-full="img/hero-interior.jpg">
+          <picture>
+            <source media="(max-width: 980px)" srcset="img/m/hero-interior.jpg" />
+            <img src="img/hero-interior.jpg" alt="Витрина кофейни вечером" loading="lazy" decoding="async" />
+          </picture>
+        </button>
+        <button class="tile film__shot" data-full="img/photo-04.jpg">
+          <picture>
+            <source media="(max-width: 980px)" srcset="img/m/photo-04.jpg" />
+            <img src="img/photo-04.jpg" alt="Кофе с запиской-предсказанием" loading="lazy" decoding="async" />
+          </picture>
+        </button>
+        <button class="tile film__shot" data-full="img/photo-15.jpg">
+          <picture>
+            <source media="(max-width: 980px)" srcset="img/m/photo-15.jpg" />
+            <img src="img/photo-15.jpg" alt="Печенька с предсказанием на стакане" loading="lazy" decoding="async" />
+          </picture>
+        </button>
+        <button class="tile film__shot film__shot--tall" data-full="img/photo-01.jpg">
+          <picture>
+            <source media="(max-width: 980px)" srcset="img/m/photo-01.jpg" />
+            <img src="img/photo-01.jpg" alt="Закат в окне кофейни" loading="lazy" decoding="async" />
+          </picture>
+        </button>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="reviews__top reveal">
+        <div class="reviews__head">
+          <p class="eyebrow">06 — голоса</p>
+          <h2>5.0 не из воздуха.</h2>
+          <p>97 отзывов на Яндексе. Напитки, персонал, атмосфера — 100% положительных.</p>
+        </div>
+        <aside class="reviews__score">
+          <b>5.0</b>
+          <span class="stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          <small>97 отзывов · Яндекс</small>
+          <a href="https://yandex.ru/maps/org/dusha_feniksa/68567742383/reviews/" target="_blank" rel="noreferrer">Читать все</a>
+        </aside>
+      </div>
+      <div class="quotes">
+        <article class="quote quote--lead reveal">
+          <span class="quote__mark" aria-hidden="true">«</span>
+          <span class="stars" aria-label="5 из 5"><i></i><i></i><i></i><i></i><i></i></span>
+          <p>
+            <span class="quote__slogan">Зашёл случайно — остался навсегда.</span>
+            Ламповая атмосфера, вкусный кофе и печеньки с предсказаниями. Даже четвероногие друзья в восторге.
+          </p>
+          <footer>
+            <span class="quote__ava">AK</span>
+            <div>
+              <b>Ann Krivis</b>
+              <span>декабрь 2025</span>
+            </div>
+          </footer>
+        </article>
+        <article class="quote reveal">
+          <span class="quote__mark" aria-hidden="true">«</span>
+          <span class="stars" aria-label="5 из 5"><i></i><i></i><i></i><i></i><i></i></span>
+          <p>Стильная кофейня с настоящим мотиком внутри. Атмосферно, душевно, вкусно. В такие места хочется возвращаться.</p>
+          <footer>
+            <span class="quote__ava">АМ</span>
+            <div>
+              <b>Айгуль Мустафина</b>
+              <span>февраль</span>
+            </div>
+          </footer>
+        </article>
+        <article class="quote reveal">
+          <span class="quote__mark" aria-hidden="true">«</span>
+          <span class="stars" aria-label="5 из 5"><i></i><i></i><i></i><i></i><i></i></span>
+          <p>Авторский кофе, которого нет больше нигде. Девочки не мешают сиропы — они придумывают напитки. Здесь не просто кофе, а отдых для души.</p>
+          <footer>
+            <span class="quote__ava">V</span>
+            <div>
+              <b>veysvictoria</b>
+              <span>январь</span>
+            </div>
+          </footer>
+        </article>
+        <article class="quote reveal">
+          <span class="quote__mark" aria-hidden="true">«</span>
+          <span class="stars" aria-label="5 из 5"><i></i><i></i><i></i><i></i><i></i></span>
+          <p>Байкерский вайб, настоящий мотоцикл, уходить не хочется. Отдельная благодарность за такой уют.</p>
+          <footer>
+            <span class="quote__ava">РШ</span>
+            <div>
+              <b>Рухшона Шарабидинова</b>
+              <span>июль</span>
+            </div>
+          </footer>
+        </article>
+        <article class="quote reveal">
+          <span class="quote__mark" aria-hidden="true">«</span>
+          <span class="stars" aria-label="5 из 5"><i></i><i></i><i></i><i></i><i></i></span>
+          <p>Сырный латте с настоящим сыром. Не сладкий — сливочный и нежный. Печенье с предсказанием в подарок. Теперь любимое место.</p>
+          <footer>
+            <span class="quote__ava">KB</span>
+            <div>
+              <b>Kot Begemot</b>
+              <span>январь</span>
+            </div>
+          </footer>
+        </article>
+        <article class="quote reveal">
+          <span class="quote__mark" aria-hidden="true">«</span>
+          <span class="stars" aria-label="5 из 5"><i></i><i></i><i></i><i></i><i></i></span>
+          <p>Однозначно в топ-3 моих кофеен. Эспрессо крепкий, без лишней горечи, латте — сказка. Теперь стандартный пункт по утрам.</p>
+          <footer>
+            <span class="quote__ava">СЛ</span>
+            <div>
+              <b>Серега Л.</b>
+              <span>май</span>
+            </div>
+          </footer>
+        </article>
+        <article class="quote reveal">
+          <span class="quote__mark" aria-hidden="true">«</span>
+          <span class="stars" aria-label="5 из 5"><i></i><i></i><i></i><i></i><i></i></span>
+          <p>Завлекла стилистика мото — по итогу обрела тут классных друзей. Кофе и еда отменные, но возвращаюсь ещё и поболтать.</p>
+          <footer>
+            <span class="quote__ava">ЕР</span>
+            <div>
+              <b>Екатерина Романовская</b>
+              <span>ноябрь 2025</span>
+            </div>
+          </footer>
+        </article>
+        <article class="quote reveal">
+          <span class="quote__mark" aria-hidden="true">«</span>
+          <span class="stars" aria-label="5 из 5"><i></i><i></i><i></i><i></i><i></i></span>
+          <p>Жалею, что не зашла раньше. Кофе поднимает настроение на весь день и почти отбивает желание возвращаться в Москву.</p>
+          <footer>
+            <span class="quote__ava">R</span>
+            <div>
+              <b>Red</b>
+              <span>июль</span>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="visit__card reveal">
+        <div class="visit__kicker">
+          <p class="eyebrow">07 — маршрут</p>
+          <span class="status" id="visitStatus"><i></i><span>открыто до 22:00</span></span>
+        </div>
+        <h2>Комендантский<br />проспект, 71</h2>
+        <p class="visit__lead">Приморский район. Ищи неоновую вывеску — 290 метров от остановки «Арцеуловская аллея».</p>
+        <div class="visit__facts">
+          <article class="visit__fact">
+            <span>Часы</span>
+            <strong>Пн–Пт 08:00–22:00</strong>
+            <em>Сб–Вс 09:00–22:00</em>
+          </article>
+          <a class="visit__fact" href="tel:+79107458688">
+            <span>Телефон</span>
+            <strong>+7 910 745-86-88</strong>
+            <em>позвонить</em>
+          </a>
+          <a class="visit__fact" href="https://t.me/PhoenixSoulCoffee" target="_blank" rel="noreferrer">
+            <span>Телеграм</span>
+            <strong>@PhoenixSoulCoffee</strong>
+            <em>написать</em>
+          </a>
+          <article class="visit__fact">
+            <span>Остановка</span>
+            <strong>Арцеуловская аллея</strong>
+            <em>290 метров</em>
+          </article>
+        </div>
+        <ul class="visit__tags">
+          <li>Wi-Fi</li>
+          <li>Карты и QR</li>
+          <li>Можно с питомцем</li>
+          <li>Велопарковка</li>
+        </ul>
+        <div class="visit__cta">
+          <a class="btn btn--cyan" href="https://yandex.ru/maps/org/dusha_feniksa/68567742383/" target="_blank" rel="noreferrer">Открыть в Яндекс Картах</a>
+          <a class="btn btn--ghost" href="tel:+79107458688">Позвонить</a>
+        </div>
+      </div>
+      <div class="visit__map">
+        <iframe title="Карта: Душа Феникса на Комендантском проспекте" src="https://yandex.ru/map-widget/v1/?ll=30.220248%2C60.041099&z=16&oid=68567742383&ol=biz" loading="lazy"></iframe>
+        <figure class="visit__place">
+          <picture>
+            <source media="(max-width: 980px)" srcset="img/m/hero-interior.jpg" />
+            <img src="img/hero-interior.jpg" alt="Вечерняя вывеска кофейни Душа Феникса" loading="lazy" decoding="async" />
+          </picture>
+          <figcaption>Так выглядит с улицы вечером</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <span class="nav__logo-script">Душа Феникса</span>
+      <p>Кофейня на Комендантском. Зашёл случайно — остался навсегда.</p>
+      <p class="footer__meta">Санкт-Петербург · Комендантский пр., 71 · <a href="tel:+79107458688">+7 910 745-86-88</a></p>
+    </div>
+    <a class="footer__made" href="https://github.com/ilyalycha23" target="_blank" rel="noreferrer">
+      Made by <b>ilyalycha</b>
+    </a>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Закрыть">×</button>
+    <img id="lightboxImg" alt="" />
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
