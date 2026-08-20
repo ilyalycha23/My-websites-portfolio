@@ -572,53 +572,42 @@ section[id] { scroll-margin-top: 5.2rem; }
 }
 .moto {
   display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  grid-template-rows: auto 1fr;
-  min-height: 74vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  column-gap: 0;
+  min-height: 0;
   background: #000;
   position: relative;
   overflow: hidden;
 }
-.moto__head {
-  grid-column: 2;
-  grid-row: 1;
-  padding: 4.4rem 3.4rem 0 2.4rem;
-}
-.moto__copy {
-  grid-column: 2;
-  grid-row: 2;
-  padding: 0 3.4rem 3.2rem 2.4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
 .moto__stage {
   grid-column: 1;
-  grid-row: 1 / 3;
+  grid-row: 1 / 4;
   position: relative;
-  height: 74vh;
-  min-height: 74vh;
+  height: auto;
+  min-height: 0;
   pointer-events: none;
+  overflow: visible;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  z-index: 3;
+  padding-right: 0.6rem;
 }
 .moto__bike {
   position: relative;
-  height: 74vh;
-  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  max-width: 86%;
 }
-.moto__frame {
-  position: relative;
-  height: 74vh;
+.moto__bike > picture {
+  display: block;
+  width: auto;
+  height: auto;
 }
-.moto__frame > picture { display: block; height: 74vh; width: auto; }
-.moto__bike img.moto__photo,
 .moto__bike img#motoImg {
   width: auto;
-  height: 74vh;
-  max-width: none;
+  height: 63vh;
+  max-width: 100%;
   display: block;
   object-fit: contain;
   object-position: right top;
@@ -627,35 +616,48 @@ section[id] { scroll-margin-top: 5.2rem; }
 .moto__glow {
   position: absolute; inset: 0; pointer-events: none; opacity: 0;
   background:
-    radial-gradient(circle at 62% 42%, rgba(78,227,255,.28), transparent 32%),
-    radial-gradient(circle at 48% 62%, rgba(255,138,31,.14), transparent 36%);
+    radial-gradient(circle at 78% 42%, rgba(78,227,255,.28), transparent 32%),
+    radial-gradient(circle at 72% 62%, rgba(255,138,31,.14), transparent 36%);
   mix-blend-mode: screen;
 }
+.moto__head {
+  grid-column: 2;
+  grid-row: 1;
+  padding: 4.6rem 5vw 0 3rem;
+}
 .moto__head h2 { margin: 0; }
+.moto__copy {
+  grid-column: 2;
+  grid-row: 3;
+  padding: 0 5vw 6.2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 .moto__copy p { color: var(--muted); margin: 0; }
 .moto__lead {
   max-width: 42ch;
-  padding-left: 0.7rem;
 }
 .moto__note {
   font-size: 0.85rem !important;
   margin-top: 0.55rem !important;
-  padding-left: 0.7rem;
 }
 
 .grip {
-  position: absolute;
-  left: 94%;
-  top: 34%;
+  grid-column: 2;
+  grid-row: 2;
+  align-self: start;
+  justify-self: start;
+  position: relative;
   z-index: 4;
   display: block;
-  width: min(640px, 56vw);
-  padding: 0.2rem 0 1.7rem;
+  width: min(440px, 90%);
+  margin: 1.85rem 0 0 3rem;
+  padding: 0;
   pointer-events: auto;
   touch-action: none;
   user-select: none;
   -webkit-user-select: none;
-  transform: translate(-10%, -50%);
   filter: drop-shadow(0 0 1px rgba(150, 220, 255, .85)) drop-shadow(0 10px 18px rgba(0,0,0,.65));
 }
 .grip picture { width: 100%; }
@@ -671,11 +673,11 @@ section[id] { scroll-margin-top: 5.2rem; }
 }
 .grip__label {
   display: block;
-  margin-top: 0.45rem;
-  padding-left: 18%;
+  margin-top: 0.55rem;
+  text-align: center;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: var(--muted);
   white-space: nowrap;
 }
@@ -1551,7 +1553,7 @@ a.visit__fact:hover {
   .moto {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto auto;
     min-height: 0;
     width: 100%;
     max-width: 100%;
@@ -1573,27 +1575,23 @@ a.visit__fact:hover {
     height: auto;
     min-height: 0;
     pointer-events: none;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 0 0.4rem;
+    padding: 0;
     overflow: visible;
+    display: block;
+    justify-content: center;
   }
-  .moto__bike {
+  .moto__bike,
+  .moto__bike > picture {
+    position: relative;
+    inset: auto;
     width: min(100%, 440px);
     height: auto;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
-  .moto__frame {
-    width: 100%;
-    height: auto;
-  }
-  .moto__frame > picture,
   .moto__bike img#motoImg {
     -webkit-mask-image: none;
     mask-image: none;
+    position: relative;
     display: block;
     width: 100%;
     height: auto;
@@ -1603,27 +1601,23 @@ a.visit__fact:hover {
     margin: 0;
   }
   .grip {
-    position: relative;
-    left: auto;
-    top: auto;
-    width: min(260px, 82%);
-    max-width: none;
-    transform: none;
+    grid-column: 1;
+    grid-row: 3;
+    width: min(300px, 88%);
     margin: 0.5rem auto 0.35rem;
     padding: 0.85rem 0.4rem 0.5rem;
+    justify-self: center;
     pointer-events: auto;
     touch-action: none;
     -webkit-touch-callout: none;
   }
   .grip__label {
     font-size: 0.7rem;
-    padding-left: 0;
-    text-align: center;
     letter-spacing: 0.16em;
   }
   .moto__copy {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 4;
     padding: 0.85rem 1.2rem 2.4rem;
     justify-content: flex-start;
   }

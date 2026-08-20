@@ -187,28 +187,26 @@
     </section>
 
     <section class="moto" id="moto">
+      <div class="moto__stage">
+        <div class="moto__bike">
+          <picture>
+              <source media="(max-width: 980px)" srcset="img/m/moto-face.jpg?v=5" />
+              <img id="motoImg" src="img/moto-face.jpg?v=5" alt="Спортбайк из кофейни — анфас" loading="lazy" decoding="async" />
+          </picture>
+          <div class="moto__glow" id="motoGlow"></div>
+        </div>
+      </div>
       <div class="moto__head reveal">
         <p class="eyebrow">02 — характер</p>
         <h2>Крутани ручку.</h2>
       </div>
-      <div class="moto__stage">
-        <div class="moto__bike">
-          <div class="moto__frame">
-            <picture>
-              <source media="(max-width: 980px)" srcset="img/m/moto-face.jpg" />
-              <img id="motoImg" src="img/moto-face.jpg" alt="Спортбайк из кофейни — анфас, правая ручка газа в интерфейсе" loading="lazy" decoding="async" />
-            </picture>
-            <div class="moto__glow" id="motoGlow"></div>
-          </div>
-          <button class="grip" id="throttle" type="button" aria-label="Зажать и крутить ручку газа">
-            <picture>
-              <source media="(max-width: 980px)" type="image/webp" srcset="img/m/throttle-grip.webp" />
-              <img class="grip__img" id="gripRubber" src="img/throttle-grip.png" alt="" />
-            </picture>
-            <span class="grip__label">зажать и крутить</span>
-          </button>
-        </div>
-      </div>
+      <button class="grip" id="throttle" type="button" aria-label="Зажать и крутить ручку газа">
+        <picture>
+          <source media="(max-width: 980px)" type="image/webp" srcset="img/m/throttle-grip.webp" />
+          <img class="grip__img" id="gripRubber" src="img/throttle-grip.png" alt="" />
+        </picture>
+        <span class="grip__label">зажать и крутить</span>
+      </button>
       <div class="moto__copy reveal">
         <p class="moto__lead">
           Настоящий мотоцикл в кофейне — не декорация «для инсты».
