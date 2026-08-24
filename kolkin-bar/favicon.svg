@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="4" x2="34" y2="38" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4A3420"/>
+      <stop offset="0.5" stop-color="#1C120C"/>
+      <stop offset="1" stop-color="#2E1E14"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="4" y1="4" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0D9A8"/>
+      <stop offset="0.45" stop-color="#C9944E"/>
+      <stop offset="1" stop-color="#7A4E28"/>
+    </linearGradient>
+    <linearGradient id="k" x1="12" y1="8" x2="28" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF6E4"/>
+      <stop offset="1" stop-color="#E8C48A"/>
+    </linearGradient>
+  </defs>
+  <circle cx="20" cy="20" r="19" fill="url(#bg)"/>
+  <circle cx="20" cy="20" r="18.2" stroke="url(#ring)" stroke-width="1.6"/>
+  <path d="M12.5 9.5h3.2a.55.55 0 0 1 .55.55v19.9a.55.55 0 0 1-.55.55h-3.2a.55.55 0 0 1-.55-.55V10.05c0-.3.25-.55.55-.55Z" fill="url(#k)"/>
+  <path d="M16.5 19.2 26.1 9.9a.7.7 0 0 1 .95.05l1.85 1.95a.7.7 0 0 1-.05.98L19.4 21.1l-2.9-1.9Z" fill="url(#k)"/>
+  <path d="M16.5 20.8l2.9 1.9 9.8 8.6a.7.7 0 0 1-.02 1.05l-2.05 1.75a.7.7 0 0 1-.98-.05L16.5 20.8Z" fill="url(#k)"/>
+  <path d="M22.4 17.1c1.45-2.2 4.05-2.95 5.7-2.15-1 2.05-.85 4.05.25 5.65-2.15-.1-4.5-1.35-5.95-3.5Z" fill="#C9944E"/>
+  <path d="M24.2 17.6c.85-1 2.05-1.55 3.1-1.45" stroke="#1C120C" stroke-width="0.65" stroke-linecap="round" opacity="0.4"/>
+</svg>
