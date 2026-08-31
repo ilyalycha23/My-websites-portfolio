@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">"Q@:8  10@ 4;O 4@C759</title>
+  <circle cx="100" cy="100" r="100" fill="#1C1915"/>
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#F7F1E8" stroke-width="1.5"/>
+  <text x="100" y="96" text-anchor="middle" fill="#F7F1E8" font-family="Manrope, system-ui, sans-serif" font-size="32" font-weight="800" letter-spacing="4">" </text>
+  <text x="100" y="122" text-anchor="middle" fill="#F7F1E8" font-family="Manrope, system-ui, sans-serif" font-size="9" font-weight="600" letter-spacing="3.2">  /  #</text>
+</svg>
